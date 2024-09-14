@@ -1,0 +1,12 @@
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\bin\Debug\CadTiendaropa.dll.config
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\bin\Debug\CadTiendaropa.dll
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\bin\Debug\CadTiendaropa.pdb
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\bin\Debug\EntityFramework.dll
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\bin\Debug\EntityFramework.SqlServer.dll
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\bin\Debug\EntityFramework.xml
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\bin\Debug\EntityFramework.SqlServer.xml
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\obj\Debug\CadTiendaropa.csproj.AssemblyReference.cache
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\obj\Debug\CadTiendaropa.csproj.CoreCompileInputs.cache
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\obj\Debug\CadTiend.2E6753E9.Up2Date
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\obj\Debug\CadTiendaropa.dll
+D:\job\nata\el proyecto\sis457_tiendaropa\CadTiendaropa\obj\Debug\CadTiendaropa.pdb

@@ -1,0 +1,15 @@
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\ClnTiendaropa.dll.config
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\ClnTiendaropa.dll
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\ClnTiendaropa.pdb
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\CadTiendaropa.dll
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\EntityFramework.dll
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\EntityFramework.SqlServer.dll
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\CadTiendaropa.pdb
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\CadTiendaropa.dll.config
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\EntityFramework.xml
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\bin\Debug\EntityFramework.SqlServer.xml
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\obj\Debug\ClnTiendaropa.csproj.AssemblyReference.cache
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\obj\Debug\ClnTiendaropa.csproj.CoreCompileInputs.cache
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\obj\Debug\ClnTiend.00F579D7.Up2Date
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\obj\Debug\ClnTiendaropa.dll
+D:\job\nata\el proyecto\sis457_tiendaropa\ClnTiendaropa\obj\Debug\ClnTiendaropa.pdb
