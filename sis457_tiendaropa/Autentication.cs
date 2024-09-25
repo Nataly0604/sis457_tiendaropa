@@ -32,11 +32,14 @@ namespace sis457_tiendaropa
 
            
             var usuarioValido = UsuarioCln.validar(usuario, clave);
+   
+
+
 
             if (usuarioValido != null)
             {
                
-                Inicio f = new Inicio();
+                Inicio f = new Inicio(usuarioValido);
                 f.Show();
                 this.Hide();
 
