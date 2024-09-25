@@ -37,6 +37,7 @@ D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\bin\Deb
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\EntityFramework.SqlServer.xml
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\Cptiendaropa.csproj.AssemblyReference.cache
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.Autentication.resources
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmUsuarios.resources
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.Inicio.resources
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.Properties.Resources.resources
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\Cptiendaropa.csproj.GenerateResource.cache
@@ -44,3 +45,12 @@ D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Deb
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\Cptienda.1A6BEE3D.Up2Date
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.exe
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.pdb
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmCategoria.resources
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmClientes.resources
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmcompras.resources
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmDetalleCompra.resources
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmDetalleVentas.resources
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmProducto.resources
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmProveedores.resources
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmReportes.resources
+D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmVentas.resources

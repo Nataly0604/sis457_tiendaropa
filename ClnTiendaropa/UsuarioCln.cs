@@ -33,17 +33,10 @@ namespace ClnTiendaropa
         }
 
 
-        public static Usuario obtenerUno(int id)
-        {
-            using (var context = new Labsis457tiendaderopaEntities())
-            {
-                return context.Usuario
-                    .Include(e => e.Rol)
-                    .Where(e => e.id == id)
-                   
-                    .FirstOrDefault();
-            }// Labsis457tiendaderopaEntities1    
+        public static Usuario obtenertodo()
+            { return new Usuario(); 
         }
+        // Labsis457tiendaderopaEntities1    
 
         public static Usuario validar(string usuario, string clave)
         {
