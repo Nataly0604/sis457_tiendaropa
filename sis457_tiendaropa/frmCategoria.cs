@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using sis457_tiendaropa.utilidades;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,17 @@ using CadTiendaropa;
 using ClnTiendaropa;
 using System.Windows.Forms;
 
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
 
 namespace sis457_tiendaropa
 {
@@ -15,6 +27,7 @@ namespace sis457_tiendaropa
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void frmCategoria_Load(object sender, EventArgs e)
         {
@@ -122,5 +135,7 @@ namespace sis457_tiendaropa
             Limpiar();
 
         }
+=======
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
     }
 }

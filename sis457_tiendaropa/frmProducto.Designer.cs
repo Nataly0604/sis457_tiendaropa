@@ -1,16 +1,29 @@
 ﻿namespace sis457_tiendaropa
 {
+<<<<<<< HEAD
     partial class FrmProducto
     {
         /// <summary>
         /// Variable del diseñador necesaria.
+=======
+    partial class frmProducto
+    {
+        /// <summary>
+        /// Required designer variable.
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
+<<<<<<< HEAD
         /// Limpiar los recursos que se estén usando.
         /// </summary>
         /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+=======
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,6 +33,7 @@
             base.Dispose(disposing);
         }
 
+<<<<<<< HEAD
         #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>
@@ -379,6 +393,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpUnidadMedida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpSaldo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpPrecioVenta)).EndInit();
+=======
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(337, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "frmProducto";
+            // 
+            // frmProducto
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Name = "frmProducto";
+            this.Text = "frmProducto";
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,6 +430,7 @@
 
         #endregion
 
+<<<<<<< HEAD
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblBusqueda;
         private System.Windows.Forms.TextBox txtParametro;
@@ -418,3 +463,8 @@
     }
 }
 
+=======
+        private System.Windows.Forms.Label label1;
+    }
+}
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479

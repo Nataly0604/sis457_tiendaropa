@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,10 +58,14 @@
             this.idRol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
+=======
+            this.label1 = new System.Windows.Forms.Label();
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
             this.SuspendLayout();
             // 
             // label1
             // 
+<<<<<<< HEAD
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Location = new System.Drawing.Point(0, 0);
@@ -339,11 +344,20 @@
             this.clave.Name = "clave";
             this.clave.ReadOnly = true;
             this.clave.Visible = false;
+=======
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(276, 169);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "el formulario de usuario";
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
             // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(793, 419);
             this.Controls.Add(this.textid);
@@ -368,6 +382,12 @@
             this.Text = "frmUsuarios";
             this.Load += new System.EventHandler(this.frmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).EndInit();
+=======
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Name = "frmUsuarios";
+            this.Text = "frmUsuarios";
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,6 +396,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labe;
@@ -401,5 +422,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn estadovalor;
         private System.Windows.Forms.DataGridViewTextBoxColumn idRol;
         private System.Windows.Forms.DataGridViewTextBoxColumn clave;
+=======
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
     }
 }

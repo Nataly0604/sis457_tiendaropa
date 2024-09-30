@@ -207,12 +207,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+<<<<<<< HEAD
     <None Include="Resources\delete.png" />
     <None Include="Resources\login_ok.png" />
     <None Include="Resources\cancel.png" />
     <Content Include="Resources\save.png" />
     <None Include="Resources\save1.png" />
     <None Include="Resources\inicio.PNG" />
+=======
+    <None Include="Resources\inicio.png" />
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
     <None Include="Resources\Captura.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿
 using System;
+=======
+﻿using System;
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +15,7 @@ using System.Windows.Forms;
 
 namespace sis457_tiendaropa
 {
+<<<<<<< HEAD
     public partial class FrmProducto : Form
     {
         private bool esNuevo = false;
@@ -167,5 +172,13 @@ namespace sis457_tiendaropa
             //        MessageBoxButtons.OK, MessageBoxIcon.Information);
             //}
         }
+=======
+    public partial class frmProducto : Form
+    {
+        public frmProducto()
+        {
+            InitializeComponent();
+        }
+>>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
     }
 }
