@@ -1,4 +1,5 @@
 ﻿using CadTiendaropa;
+using ClnTiendaropa;
 using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
@@ -15,13 +16,17 @@ namespace sis457_tiendaropa
     public partial class Inicio : Form
     {
 
-        private static Usuario  usuarioActual;
+        public static Usuario  usuarioActual;
         private static IconMenuItem menuActual=null;
         private static Form formularioActual = null;
 
-        public Inicio(Usuario objusuario)
+        public Inicio(Usuario objusuario=null)
         {
-            usuarioActual=objusuario;
+            //if (objusuario == null)
+            //    usuarioActual = new Usuario() { usuarioRegistro = "ADMIN", id = 1, usuario1 = "ADMIN", clave="123" };
+            //else
+                usuarioActual = objusuario;
+
             InitializeComponent();
         }
 
@@ -54,13 +59,26 @@ namespace sis457_tiendaropa
 
         private void Inicio_Load(object sender, EventArgs e)
         {
+            List<Permiso> listapermisos = new PermisosCln().listar(usuarioActual.id);
+
+            foreach(IconMenuItem iconmenu in menu.Items)
+            {
+                bool encontrado=listapermisos.Any(x => x.nombreMenu == iconmenu.Name);
+                if (encontrado)
+                {
+                    iconmenu.Visible = true;
+                }
+                else
+                {
+                    iconmenu.Visible = false;
+                }
+            }
+
             userActual.Text = usuarioActual.usuario1;
         }
 
-        private void menuusuario_Click(object sender, EventArgs e)
-        {
-            abrirFormulario((IconMenuItem)sender, new frmUsuarios());
-        }
+
+
 
         private void submenuCategoria_Click(object sender, EventArgs e)
         {
@@ -70,7 +88,7 @@ namespace sis457_tiendaropa
 
         private void submenuProducto_Click(object sender, EventArgs e)
         {
-            abrirFormulario((IconMenuItem)sender, new frmProducto());
+            abrirFormulario((IconMenuItem)sender, new FrmProducto());
         }
 
         private void contenedor_Paint(object sender, PaintEventArgs e)
@@ -125,7 +143,15 @@ namespace sis457_tiendaropa
 
         private void submenuProducto_Click_1(object sender, EventArgs e)
         {
-            abrirFormulario((IconMenuItem)sender, new frmProducto());
+            abrirFormulario((IconMenuItem)sender, new FrmProducto());
+        }
+
+        private void menuusuarios_Click(object sender, EventArgs e)
+        {
+
+     
+                abrirFormulario((IconMenuItem)sender, new frmUsuarios());
+            
         }
     }
 }

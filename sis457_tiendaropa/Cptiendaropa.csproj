@@ -134,6 +134,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utilidades\opcionCombo.cs" />
     <EmbeddedResource Include="Autentication.resx">
       <DependentUpon>Autentication.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,7 +207,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <None Include="Resources\inicio.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\login_ok.png" />
+    <None Include="Resources\cancel.png" />
+    <Content Include="Resources\save.png" />
+    <None Include="Resources\save1.png" />
+    <None Include="Resources\inicio.PNG" />
     <None Include="Resources\Captura.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

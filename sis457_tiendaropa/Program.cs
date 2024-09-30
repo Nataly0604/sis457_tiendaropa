@@ -21,31 +21,31 @@ namespace sis457_tiendaropa
         static void Main()
         {
 
-            string mensaje;
-            using (var context = new Labsis457tiendaderopaEntities())
-            {
-                try
-                {
-                    // Realiza una consulta simple para verificar la conexión
-                    var usuarios = context.Usuario.Take(1).ToList();
+            //string mensaje;
+            //using (var context = new Labsis457tiendaderopaEntities())
+            //{
+            //    try
+            //    {
+            //        // Realiza una consulta simple para verificar la conexión
+            //        var usuarios = context.Usuario.Take(1).ToList();
 
-                    if (usuarios.Any())
-                    {
-                        mensaje = "Conexión exitosa. Se encontró al menos un usuario en la base de datos.";
-                    }
-                    else
-                    {
-                        mensaje = "Conexión exitosa, pero no se encontraron registros en la tabla Usuario.";
-                    }
-                }
-                catch (Exception ex)
-                {
-                    mensaje = "Error de conexión: " + ex.Message;
-                }
-            }
+            //        if (usuarios.Any())
+            //        {
+            //            mensaje = "Conexión exitosa. Se encontró al menos un usuario en la base de datos.";
+            //        }
+            //        else
+            //        {
+            //            mensaje = "Conexión exitosa, pero no se encontraron registros en la tabla Usuario.";
+            //        }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        mensaje = "Error de conexión: " + ex.Message;
+            //    }
+            //}
 
-            // Muestra el mensaje en un MessageBox
-            MessageBox.Show(mensaje, "Resultado de la Conexión", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //// Muestra el mensaje en un MessageBox
+            //MessageBox.Show(mensaje, "Resultado de la Conexión", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             // Habilita los estilos visuales y ejecuta el formulario de autenticación
             Application.EnableVisualStyles();
