@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\Sis457Tiendaropa\CadTiendaropa\bin\Debug\CadTiendaropa.dll
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\Sis457Tiendaropa\CadTiendaropa\bin\Debug\CadTiendaropa.pdb
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\Sis457Tiendaropa\CadTiendaropa\obj\Debug\CadTiendaropa.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\Sis457Tiendaropa\CadTiendaropa\obj\Debug\CadTiendaropa.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\Sis457Tiendaropa\CadTiendaropa\obj\Debug\CadTiendaropa.dll
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\Sis457Tiendaropa\CadTiendaropa\obj\Debug\CadTiendaropa.pdb
