@@ -21,7 +21,7 @@ namespace ClnTiendaropa
                 try
                 {
                     return db.Producto
-                             .Where(p => p.estado == 0) // Solo productos activos
+                             .Where(p => p.estado == 1) // Solo productos activos
                              .Include(p => p.Categoria) // Incluir información de la categoría
                              .ToList();
                 }
