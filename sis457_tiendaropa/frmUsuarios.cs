@@ -205,6 +205,8 @@ namespace sis457_tiendaropa
                 usuarioRegistro = "empleado", // Asegúrate de reemplazar esto con el valor adecuado
                 fechaRegistro = DateTime.Now // Solo para nuevas inserciones
             };
+           
+
 
             new UsuarioCln().actualizar(usuario);
             MessageBox.Show("Usuario actualizado correctamente", "Editar Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -32,7 +32,11 @@ namespace sis457_tiendaropa
         private void InitializeComponent()
         {
             this.menu = new System.Windows.Forms.MenuStrip();
-            this.menuusuario = new FontAwesome.Sharp.IconMenuItem();
+            this.menuTitulo = new System.Windows.Forms.MenuStrip();
+            this.label1 = new System.Windows.Forms.Label();
+            this.contenedor = new System.Windows.Forms.Panel();
+            this.userActual = new System.Windows.Forms.Label();
+            this.menuusuarios = new FontAwesome.Sharp.IconMenuItem();
             this.menumantenedor = new FontAwesome.Sharp.IconMenuItem();
             this.submenuCategoria = new FontAwesome.Sharp.IconMenuItem();
             this.submenuProducto = new FontAwesome.Sharp.IconMenuItem();
@@ -46,18 +50,15 @@ namespace sis457_tiendaropa
             this.menuproveedores = new FontAwesome.Sharp.IconMenuItem();
             this.menureportes = new FontAwesome.Sharp.IconMenuItem();
             this.menuacercade = new FontAwesome.Sharp.IconMenuItem();
-            this.menuTitulo = new System.Windows.Forms.MenuStrip();
-            this.label1 = new System.Windows.Forms.Label();
-            this.contenedor = new System.Windows.Forms.Panel();
-            this.userActual = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu
             // 
             this.menu.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuusuario,
+            this.menuusuarios,
             this.menumantenedor,
             this.menuventas,
             this.menucompras,
@@ -65,24 +66,71 @@ namespace sis457_tiendaropa
             this.menuproveedores,
             this.menureportes,
             this.menuacercade});
+            this.menu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menu.Location = new System.Drawing.Point(0, 59);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(861, 53);
+            this.menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menu.Size = new System.Drawing.Size(90, 406);
             this.menu.TabIndex = 2;
             this.menu.Text = "menuStrip1";
             // 
-            // menuusuario
+            // menuTitulo
             // 
-            this.menuusuario.IconChar = FontAwesome.Sharp.IconChar.UserGear;
-            this.menuusuario.IconColor = System.Drawing.Color.Black;
-            this.menuusuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuusuario.IconSize = 30;
-            this.menuusuario.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuusuario.Name = "menuusuario";
-            this.menuusuario.Size = new System.Drawing.Size(66, 49);
-            this.menuusuario.Text = "usuarios ";
-            this.menuusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuusuario.Click += new System.EventHandler(this.menuusuario_Click);
+            this.menuTitulo.AutoSize = false;
+            this.menuTitulo.BackColor = System.Drawing.Color.Plum;
+            this.menuTitulo.Location = new System.Drawing.Point(0, 0);
+            this.menuTitulo.Name = "menuTitulo";
+            this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuTitulo.Size = new System.Drawing.Size(861, 59);
+            this.menuTitulo.TabIndex = 3;
+            this.menuTitulo.Text = "asda";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Plum;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(350, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(207, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Sistema venta de ropa";
+            // 
+            // contenedor
+            // 
+            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contenedor.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.contenedor.Location = new System.Drawing.Point(90, 59);
+            this.contenedor.Name = "contenedor";
+            this.contenedor.Size = new System.Drawing.Size(771, 406);
+            this.contenedor.TabIndex = 5;
+            this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
+            // 
+            // userActual
+            // 
+            this.userActual.AutoSize = true;
+            this.userActual.BackColor = System.Drawing.Color.Plum;
+            this.userActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userActual.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userActual.Location = new System.Drawing.Point(740, 22);
+            this.userActual.Name = "userActual";
+            this.userActual.Size = new System.Drawing.Size(64, 25);
+            this.userActual.TabIndex = 6;
+            this.userActual.Text = "label2";
+            // 
+            // menuusuarios
+            // 
+            this.menuusuarios.IconChar = FontAwesome.Sharp.IconChar.UserGear;
+            this.menuusuarios.IconColor = System.Drawing.Color.Black;
+            this.menuusuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuusuarios.IconSize = 30;
+            this.menuusuarios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuusuarios.Name = "menuusuarios";
+            this.menuusuarios.Size = new System.Drawing.Size(66, 49);
+            this.menuusuarios.Text = "usuarios ";
+            this.menuusuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuusuarios.Click += new System.EventHandler(this.menuusuario_Click);
             // 
             // menumantenedor
             // 
@@ -106,7 +154,7 @@ namespace sis457_tiendaropa
             this.submenuCategoria.IconColor = System.Drawing.Color.Black;
             this.submenuCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuCategoria.Name = "submenuCategoria";
-            this.submenuCategoria.Size = new System.Drawing.Size(180, 22);
+            this.submenuCategoria.Size = new System.Drawing.Size(125, 22);
             this.submenuCategoria.Text = "Categoria";
             this.submenuCategoria.Click += new System.EventHandler(this.submenuCategoria_Click_1);
             // 
@@ -116,7 +164,7 @@ namespace sis457_tiendaropa
             this.submenuProducto.IconColor = System.Drawing.Color.Black;
             this.submenuProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuProducto.Name = "submenuProducto";
-            this.submenuProducto.Size = new System.Drawing.Size(180, 22);
+            this.submenuProducto.Size = new System.Drawing.Size(125, 22);
             this.submenuProducto.Text = "producto";
             this.submenuProducto.Click += new System.EventHandler(this.submenuProducto_Click_1);
             // 
@@ -242,51 +290,6 @@ namespace sis457_tiendaropa
             this.menuacercade.Text = "acerca de";
             this.menuacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // menuTitulo
-            // 
-            this.menuTitulo.AutoSize = false;
-            this.menuTitulo.BackColor = System.Drawing.Color.Plum;
-            this.menuTitulo.Location = new System.Drawing.Point(0, 0);
-            this.menuTitulo.Name = "menuTitulo";
-            this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuTitulo.Size = new System.Drawing.Size(861, 59);
-            this.menuTitulo.TabIndex = 3;
-            this.menuTitulo.Text = "asda";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Plum;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(350, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Sistema venta de ropa";
-            // 
-            // contenedor
-            // 
-            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.contenedor.Location = new System.Drawing.Point(0, 112);
-            this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(861, 353);
-            this.contenedor.TabIndex = 5;
-            this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
-            // 
-            // userActual
-            // 
-            this.userActual.AutoSize = true;
-            this.userActual.BackColor = System.Drawing.Color.Plum;
-            this.userActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userActual.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userActual.Location = new System.Drawing.Point(740, 22);
-            this.userActual.Name = "userActual";
-            this.userActual.Size = new System.Drawing.Size(64, 25);
-            this.userActual.TabIndex = 6;
-            this.userActual.Text = "label2";
-            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,7 +316,7 @@ namespace sis457_tiendaropa
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.MenuStrip menuTitulo;
         private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconMenuItem menuusuario;
+        private FontAwesome.Sharp.IconMenuItem menuusuarios;
         private FontAwesome.Sharp.IconMenuItem menumantenedor;
         private FontAwesome.Sharp.IconMenuItem menuventas;
         private FontAwesome.Sharp.IconMenuItem menucompras;

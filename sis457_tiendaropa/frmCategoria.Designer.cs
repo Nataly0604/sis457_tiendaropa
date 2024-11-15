@@ -28,14 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btneliminar = new FontAwesome.Sharp.IconButton();
-            this.btnguardar = new FontAwesome.Sharp.IconButton();
-            this.btneditar = new FontAwesome.Sharp.IconButton();
             this.combestado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtdescripcion = new System.Windows.Forms.TextBox();
@@ -48,6 +44,9 @@
             this.valorestado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label7 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
+            this.btneliminar = new FontAwesome.Sharp.IconButton();
+            this.btnguardar = new FontAwesome.Sharp.IconButton();
+            this.btneditar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +69,123 @@
             this.label4.Size = new System.Drawing.Size(172, 25);
             this.label4.TabIndex = 15;
             this.label4.Text = "Detalles Categoria";
+            // 
+            // combestado
+            // 
+            this.combestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combestado.FormattingEnabled = true;
+            this.combestado.Location = new System.Drawing.Point(30, 182);
+            this.combestado.Name = "combestado";
+            this.combestado.Size = new System.Drawing.Size(158, 21);
+            this.combestado.TabIndex = 23;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(31, 166);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "combestado";
+            // 
+            // txtdescripcion
+            // 
+            this.txtdescripcion.Location = new System.Drawing.Point(30, 123);
+            this.txtdescripcion.Name = "txtdescripcion";
+            this.txtdescripcion.Size = new System.Drawing.Size(158, 20);
+            this.txtdescripcion.TabIndex = 21;
+            this.txtdescripcion.Text = "txtdescripcion";
+            // 
+            // labe
+            // 
+            this.labe.AutoSize = true;
+            this.labe.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labe.Location = new System.Drawing.Point(27, 104);
+            this.labe.Name = "labe";
+            this.labe.Size = new System.Drawing.Size(61, 13);
+            this.labe.TabIndex = 20;
+            this.labe.Text = "descripcion";
+            // 
+            // dgvdata
+            // 
+            this.dgvdata.AllowUserToAddRows = false;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnseleccionar,
+            this.id,
+            this.Descripcion,
+            this.Estado,
+            this.valorestado});
+            this.dgvdata.Location = new System.Drawing.Point(276, 104);
+            this.dgvdata.MultiSelect = false;
+            this.dgvdata.Name = "dgvdata";
+            this.dgvdata.ReadOnly = true;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvdata.RowTemplate.Height = 28;
+            this.dgvdata.Size = new System.Drawing.Size(445, 277);
+            this.dgvdata.TabIndex = 24;
+            this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
+            // 
+            // btnseleccionar
+            // 
+            this.btnseleccionar.FillWeight = 30F;
+            this.btnseleccionar.HeaderText = "";
+            this.btnseleccionar.Name = "btnseleccionar";
+            this.btnseleccionar.ReadOnly = true;
+            this.btnseleccionar.Width = 30;
+            // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            // 
+            // valorestado
+            // 
+            this.valorestado.HeaderText = "valor Estado";
+            this.valorestado.Name = "valorestado";
+            this.valorestado.ReadOnly = true;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(385, 42);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(196, 35);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "lista  de Categorias";
+            // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(146, 57);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(42, 20);
+            this.txtid.TabIndex = 26;
             // 
             // btneliminar
             // 
@@ -134,142 +250,12 @@
             this.btneditar.UseVisualStyleBackColor = false;
             this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
-            // combestado
-            // 
-            this.combestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combestado.FormattingEnabled = true;
-            this.combestado.Location = new System.Drawing.Point(30, 182);
-            this.combestado.Name = "combestado";
-            this.combestado.Size = new System.Drawing.Size(158, 21);
-            this.combestado.TabIndex = 23;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(31, 166);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "combestado";
-            // 
-            // txtdescripcion
-            // 
-            this.txtdescripcion.Location = new System.Drawing.Point(30, 123);
-            this.txtdescripcion.Name = "txtdescripcion";
-            this.txtdescripcion.Size = new System.Drawing.Size(158, 20);
-            this.txtdescripcion.TabIndex = 21;
-            this.txtdescripcion.Text = "txtdescripcion";
-            // 
-            // labe
-            // 
-            this.labe.AutoSize = true;
-            this.labe.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labe.Location = new System.Drawing.Point(27, 104);
-            this.labe.Name = "labe";
-            this.labe.Size = new System.Drawing.Size(61, 13);
-            this.labe.TabIndex = 20;
-            this.labe.Text = "descripcion";
-            // 
-            // dgvdata
-            // 
-            this.dgvdata.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.btnseleccionar,
-            this.id,
-            this.Descripcion,
-            this.Estado,
-            this.valorestado});
-            this.dgvdata.Location = new System.Drawing.Point(276, 104);
-            this.dgvdata.MultiSelect = false;
-            this.dgvdata.Name = "dgvdata";
-            this.dgvdata.ReadOnly = true;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvdata.RowTemplate.Height = 28;
-            this.dgvdata.Size = new System.Drawing.Size(445, 277);
-            this.dgvdata.TabIndex = 24;
-            this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
-            // 
-            // btnseleccionar
-            // 
-            this.btnseleccionar.FillWeight = 30F;
-            this.btnseleccionar.HeaderText = "";
-            this.btnseleccionar.Name = "btnseleccionar";
-            this.btnseleccionar.ReadOnly = true;
-            this.btnseleccionar.Width = 30;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
-            // 
-            // valorestado
-            // 
-            this.valorestado.HeaderText = "valor Estado";
-            this.valorestado.Name = "valorestado";
-            this.valorestado.ReadOnly = true;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(385, 42);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(196, 35);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "lista  de Categorias";
-            // 
-            // txtid
-            // 
-            this.txtid.Location = new System.Drawing.Point(146, 57);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(42, 20);
-            this.txtid.TabIndex = 26;
-
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(673, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "categoria";
-
-            // 
             // frmCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dgvdata);
@@ -286,11 +272,6 @@
             this.Text = "frmCategoria";
             this.Load += new System.EventHandler(this.frmCategoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).EndInit();
-
-            this.Controls.Add(this.label1);
-            this.Name = "frmCategoria";
-            this.Text = "frmCategoria";
-
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,8 +297,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn valorestado;
-
-        private System.Windows.Forms.Label label1;
 
     }
 }

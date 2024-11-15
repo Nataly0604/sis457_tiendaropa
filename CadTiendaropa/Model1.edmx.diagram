@@ -11,11 +11,11 @@
         <EntityTypeShape EntityType="Labsis457tiendaderopaModel.DetalleCompra" Width="1.5" PointX="8.875" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="Labsis457tiendaderopaModel.DetalleVenta" Width="1.5" PointX="8.875" PointY="7.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Permiso" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Producto" Width="1.5" PointX="6.25" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Proveedor" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Producto" Width="1.5" PointX="6.375" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Proveedor" Width="1.5" PointX="2.875" PointY="11.125" IsExpanded="true" />
         <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Rol" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Usuario" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Venta" Width="1.5" PointX="0.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Usuario" Width="1.5" PointX="0.5" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Labsis457tiendaderopaModel.Venta" Width="1.5" PointX="3.75" PointY="6.5" IsExpanded="true" />
         <AssociationConnector Association="Labsis457tiendaderopaModel.FK__Producto__idCate__6383C8BA" ManuallyRouted="false" />
         <AssociationConnector Association="Labsis457tiendaderopaModel.FK__Compra__idProvee__571DF1D5" ManuallyRouted="false" />
         <AssociationConnector Association="Labsis457tiendaderopaModel.FK__Compra__idUsuari__5629CD9C" ManuallyRouted="false" />
