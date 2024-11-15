@@ -54,12 +54,10 @@ namespace ClnTiendaropa
 
 
         public static Usuario obtenertodo()
-<<<<<<< HEAD
+
         {
             return new Usuario();
-=======
-            { return new Usuario(); 
->>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
+
         }
         // Labsis457tiendaderopaEntities1    
 

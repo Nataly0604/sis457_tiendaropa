@@ -10,14 +10,8 @@
 
 namespace sis457_tiendaropa.Properties {
     using System;
-<<<<<<< HEAD
     
     
-=======
-    using System.Drawing;
-
-
->>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
     /// <summary>
     ///   Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
     /// </summary>
@@ -37,13 +31,7 @@ namespace sis457_tiendaropa.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-<<<<<<< HEAD
         
-=======
-
-        public static Image Captura { get; internal set; }
-
->>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
         /// <summary>
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
@@ -75,7 +63,6 @@ namespace sis457_tiendaropa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-<<<<<<< HEAD
         internal static System.Drawing.Bitmap cancel {
             get {
                 object obj = ResourceManager.GetObject("cancel", resourceCulture);
@@ -87,15 +74,11 @@ namespace sis457_tiendaropa.Properties {
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Captura {
-=======
-        internal static System.Drawing.Bitmap inicio {
->>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
             get {
                 object obj = ResourceManager.GetObject("Captura", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-<<<<<<< HEAD
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -126,7 +109,5 @@ namespace sis457_tiendaropa.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-=======
->>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
     }
 }

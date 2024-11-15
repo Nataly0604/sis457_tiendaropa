@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
@@ -250,7 +250,7 @@
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(42, 20);
             this.txtid.TabIndex = 26;
-=======
+
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -262,14 +262,14 @@
             this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "categoria";
->>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
+
             // 
             // frmCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-<<<<<<< HEAD
+
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dgvdata);
@@ -286,11 +286,11 @@
             this.Text = "frmCategoria";
             this.Load += new System.EventHandler(this.frmCategoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).EndInit();
-=======
+
             this.Controls.Add(this.label1);
             this.Name = "frmCategoria";
             this.Text = "frmCategoria";
->>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,7 +298,7 @@
 
         #endregion
 
-<<<<<<< HEAD
+
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconButton btneliminar;
@@ -316,8 +316,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn valorestado;
-=======
+
         private System.Windows.Forms.Label label1;
->>>>>>> 13b0a28cbd030d805b9f7a07b2c6dd1e22e95479
+
     }
 }
