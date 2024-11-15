@@ -51,6 +51,7 @@
     <Compile Include="CategoriaCln.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ClienteCln.cs" />
+    <Compile Include="CompraCln.cs" />
     <Compile Include="PermisosCln.cs" />
     <Compile Include="ProductoCln.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

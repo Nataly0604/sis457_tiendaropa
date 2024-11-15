@@ -45,7 +45,6 @@ namespace sis457_tiendaropa
             this.menuclientes = new FontAwesome.Sharp.IconMenuItem();
             this.menuproveedores = new FontAwesome.Sharp.IconMenuItem();
             this.menureportes = new FontAwesome.Sharp.IconMenuItem();
-            this.menuacercade = new FontAwesome.Sharp.IconMenuItem();
             this.menuTitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.contenedor = new System.Windows.Forms.Panel();
@@ -64,13 +63,12 @@ namespace sis457_tiendaropa
             this.menucompras,
             this.menuclientes,
             this.menuproveedores,
-            this.menureportes,
-            this.menuacercade});
+            this.menureportes});
             this.menu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menu.Location = new System.Drawing.Point(0, 59);
             this.menu.Name = "menu";
             this.menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menu.Size = new System.Drawing.Size(90, 453);
+            this.menu.Size = new System.Drawing.Size(126, 453);
             this.menu.TabIndex = 2;
             this.menu.Text = "menuStrip1";
             // 
@@ -145,7 +143,7 @@ namespace sis457_tiendaropa
             this.submenuregistrar.IconColor = System.Drawing.Color.Black;
             this.submenuregistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuregistrar.Name = "submenuregistrar";
-            this.submenuregistrar.Size = new System.Drawing.Size(133, 22);
+            this.submenuregistrar.Size = new System.Drawing.Size(180, 22);
             this.submenuregistrar.Text = "regitrar";
             this.submenuregistrar.Click += new System.EventHandler(this.submenuregistrar_Click);
             // 
@@ -155,7 +153,7 @@ namespace sis457_tiendaropa
             this.submenuverdetalle.IconColor = System.Drawing.Color.Black;
             this.submenuverdetalle.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuverdetalle.Name = "submenuverdetalle";
-            this.submenuverdetalle.Size = new System.Drawing.Size(133, 22);
+            this.submenuverdetalle.Size = new System.Drawing.Size(180, 22);
             this.submenuverdetalle.Text = "ver detalles";
             this.submenuverdetalle.Click += new System.EventHandler(this.submenuverdetalle_Click);
             // 
@@ -180,7 +178,7 @@ namespace sis457_tiendaropa
             this.submenuregistraventa.IconColor = System.Drawing.Color.Black;
             this.submenuregistraventa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuregistraventa.Name = "submenuregistraventa";
-            this.submenuregistraventa.Size = new System.Drawing.Size(126, 22);
+            this.submenuregistraventa.Size = new System.Drawing.Size(180, 22);
             this.submenuregistraventa.Text = "regitrar";
             this.submenuregistraventa.Click += new System.EventHandler(this.submenuregistraventa_Click);
             // 
@@ -190,7 +188,7 @@ namespace sis457_tiendaropa
             this.submenuverdetallecompra.IconColor = System.Drawing.Color.Black;
             this.submenuverdetallecompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuverdetallecompra.Name = "submenuverdetallecompra";
-            this.submenuverdetallecompra.Size = new System.Drawing.Size(126, 22);
+            this.submenuverdetallecompra.Size = new System.Drawing.Size(180, 22);
             this.submenuverdetallecompra.Text = "ver detallr";
             this.submenuverdetallecompra.Click += new System.EventHandler(this.submenuverdetallecompra_Click);
             // 
@@ -233,18 +231,6 @@ namespace sis457_tiendaropa
             this.menureportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menureportes.Click += new System.EventHandler(this.menureportes_Click);
             // 
-            // menuacercade
-            // 
-            this.menuacercade.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            this.menuacercade.IconColor = System.Drawing.Color.Black;
-            this.menuacercade.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuacercade.IconSize = 30;
-            this.menuacercade.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuacercade.Name = "menuacercade";
-            this.menuacercade.Size = new System.Drawing.Size(77, 49);
-            this.menuacercade.Text = "acerca de";
-            this.menuacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
             // menuTitulo
             // 
             this.menuTitulo.AutoSize = false;
@@ -272,9 +258,9 @@ namespace sis457_tiendaropa
             // 
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.contenedor.Location = new System.Drawing.Point(90, 59);
+            this.contenedor.Location = new System.Drawing.Point(126, 59);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(771, 453);
+            this.contenedor.Size = new System.Drawing.Size(735, 453);
             this.contenedor.TabIndex = 5;
             this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
             // 
@@ -321,7 +307,6 @@ namespace sis457_tiendaropa
         private FontAwesome.Sharp.IconMenuItem menuventas;
         private FontAwesome.Sharp.IconMenuItem menucompras;
         private FontAwesome.Sharp.IconMenuItem menuclientes;
-        private FontAwesome.Sharp.IconMenuItem menuacercade;
         private FontAwesome.Sharp.IconMenuItem menureportes;
         private FontAwesome.Sharp.IconMenuItem menuproveedores;
         private System.Windows.Forms.Panel contenedor;
