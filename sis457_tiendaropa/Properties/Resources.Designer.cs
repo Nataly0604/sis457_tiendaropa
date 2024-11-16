@@ -103,9 +103,49 @@ namespace sis457_tiendaropa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Diseño_sin_título__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Diseño sin título (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Diseño_sin_título__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Diseño sin título (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Diseño_sin_título__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Diseño sin título (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LJ__2_ {
             get {
                 object obj = ResourceManager.GetObject("LJ (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LJ__2_1 {
+            get {
+                object obj = ResourceManager.GetObject("LJ (2)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -20,7 +20,7 @@ namespace sis457_tiendaropa
             InitializeComponent();
         }
 
-     
+
 
         private void frmProducto_Load(object sender, EventArgs e)
         {
@@ -80,7 +80,7 @@ namespace sis457_tiendaropa
                 precioVenta = decimal.Parse(textprecioventa.Text),
                 idCategoria = Convert.ToInt32(combcategoria.SelectedValue),
                 estado = (short)Convert.ToInt32(((opcionCombo)combestado.SelectedItem).Value),
-               
+
                 usuarioRegistro = Inicio.usuarioActual.usuario1,
                 fechaRegistro = DateTime.Now
             };
@@ -90,7 +90,7 @@ namespace sis457_tiendaropa
                 new ProductoCln().crear(producto);
                 MessageBox.Show("Producto creado correctamente", "Guardar Producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
- 
+
 
             CargarProductos();
             Limpiar();
@@ -101,7 +101,7 @@ namespace sis457_tiendaropa
         {
             Producto producto = new Producto
             {
-                   id = Convert.ToInt32(textid.Text),
+                id = Convert.ToInt32(textid.Text),
                 nombre = textnombre.Text,
                 codigo = textcodigo.Text,
                 descripcion = textdescripcion.Text,
@@ -113,10 +113,10 @@ namespace sis457_tiendaropa
                 usuarioRegistro = Inicio.usuarioActual.usuario1,
                 fechaRegistro = DateTime.Now
             };
-       
-                new ProductoCln().actualizar(producto);
-                MessageBox.Show("Producto actualizo correctamente", "Guardar Producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+
+            new ProductoCln().actualizar(producto);
+            MessageBox.Show("Producto actualizo correctamente", "Guardar Producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
 
             CargarProductos();
@@ -126,14 +126,14 @@ namespace sis457_tiendaropa
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
-            
-                int id = Convert.ToInt32(textid.Text);
-                new ProductoCln().eliminar(id);
-                MessageBox.Show("Producto eliminado correctamente", "Eliminar Producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                CargarProductos();
-                Limpiar();
-            
-      
+
+            int id = Convert.ToInt32(textid.Text);
+            new ProductoCln().eliminar(id);
+            MessageBox.Show("Producto eliminado correctamente", "Eliminar Producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            CargarProductos();
+            Limpiar();
+
+
 
             CargarProductos();
             Limpiar();
@@ -169,12 +169,13 @@ namespace sis457_tiendaropa
             {
                 dgvdata.DataSource = new List<Producto> { resultado }; // Para mostrar el resultado en el DataGridView // MessageBox.Show("Producto cargado correctamente", "Buscar Producto", MessageBoxButtons.OK, MessageBoxIcon.Information); }
                 CargarProductos();
-            Limpiar();
+                Limpiar();
 
 
 
-           
 
+
+            }
         }
     }
 }

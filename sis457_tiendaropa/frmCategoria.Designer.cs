@@ -77,7 +77,7 @@
             this.combestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combestado.FormattingEnabled = true;
             this.combestado.Location = new System.Drawing.Point(40, 224);
-            this.combestado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combestado.Margin = new System.Windows.Forms.Padding(4);
             this.combestado.Name = "combestado";
             this.combestado.Size = new System.Drawing.Size(209, 24);
             this.combestado.TabIndex = 23;
@@ -96,7 +96,7 @@
             // txtdescripcion
             // 
             this.txtdescripcion.Location = new System.Drawing.Point(40, 151);
-            this.txtdescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(209, 22);
             this.txtdescripcion.TabIndex = 21;
@@ -116,6 +116,7 @@
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
+            this.dgvdata.BackgroundColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -132,8 +133,9 @@
             this.Descripcion,
             this.Estado,
             this.valorestado});
+            this.dgvdata.GridColor = System.Drawing.Color.WhiteSmoke;
             this.dgvdata.Location = new System.Drawing.Point(368, 128);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -189,19 +191,21 @@
             // 
             // label7
             // 
-            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.BackColor = System.Drawing.Color.LavenderBlush;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(513, 52);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(261, 43);
             this.label7.TabIndex = 25;
-            this.label7.Text = "lista  de Categorias";
+            this.label7.Text = "Lista de Categorias";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtid
             // 
             this.txtid.Location = new System.Drawing.Point(195, 70);
-            this.txtid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtid.Margin = new System.Windows.Forms.Padding(4);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(55, 22);
             this.txtid.TabIndex = 26;
@@ -218,7 +222,7 @@
             this.btneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btneliminar.IconSize = 17;
             this.btneliminar.Location = new System.Drawing.Point(163, 368);
-            this.btneliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btneliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(100, 28);
             this.btneliminar.TabIndex = 18;
@@ -240,7 +244,7 @@
             this.btnguardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnguardar.IconSize = 17;
             this.btnguardar.Location = new System.Drawing.Point(52, 318);
-            this.btnguardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnguardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(211, 28);
             this.btnguardar.TabIndex = 17;
@@ -262,7 +266,7 @@
             this.btneditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btneditar.IconSize = 17;
             this.btneditar.Location = new System.Drawing.Point(52, 368);
-            this.btneditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btneditar.Margin = new System.Windows.Forms.Padding(4);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(100, 28);
             this.btneditar.TabIndex = 16;
@@ -276,7 +280,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label7);
@@ -290,7 +294,7 @@
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCategoria";
             this.Text = "frmCategoria";
             this.Load += new System.EventHandler(this.frmCategoria_Load);
