@@ -52,12 +52,15 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ClienteCln.cs" />
     <Compile Include="CompraCln.cs" />
+    <Compile Include="DetalleCompraCln.cs" />
+    <Compile Include="DetalleVentaCln.cs" />
     <Compile Include="PermisosCln.cs" />
     <Compile Include="ProductoCln.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedorCln.cs" />
     <Compile Include="RoleCln.cs" />
     <Compile Include="UsuarioCln.cs" />
+    <Compile Include="VentaCln.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CadTiendaropa\CadTiendaropa.csproj">

@@ -74,7 +74,7 @@ namespace sis457_tiendaropa
             // 
             // menuusuarios
             // 
-            this.menuusuarios.IconChar = FontAwesome.Sharp.IconChar.UserGear;
+            this.menuusuarios.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.menuusuarios.IconColor = System.Drawing.Color.Black;
             this.menuusuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.menuusuarios.IconSize = 30;
@@ -107,7 +107,7 @@ namespace sis457_tiendaropa
             this.submenuCategoria.IconColor = System.Drawing.Color.Black;
             this.submenuCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuCategoria.Name = "submenuCategoria";
-            this.submenuCategoria.Size = new System.Drawing.Size(125, 22);
+            this.submenuCategoria.Size = new System.Drawing.Size(180, 22);
             this.submenuCategoria.Text = "Categoria";
             this.submenuCategoria.Click += new System.EventHandler(this.submenuCategoria_Click_1);
             // 
@@ -117,7 +117,7 @@ namespace sis457_tiendaropa
             this.submenuProducto.IconColor = System.Drawing.Color.Black;
             this.submenuProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuProducto.Name = "submenuProducto";
-            this.submenuProducto.Size = new System.Drawing.Size(125, 22);
+            this.submenuProducto.Size = new System.Drawing.Size(180, 22);
             this.submenuProducto.Text = "producto";
             this.submenuProducto.Click += new System.EventHandler(this.submenuProducto_Click_1);
             // 
@@ -241,6 +241,7 @@ namespace sis457_tiendaropa
             this.menuTitulo.Size = new System.Drawing.Size(861, 59);
             this.menuTitulo.TabIndex = 3;
             this.menuTitulo.Text = "asda";
+            this.menuTitulo.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuTitulo_ItemClicked);
             // 
             // label1
             // 

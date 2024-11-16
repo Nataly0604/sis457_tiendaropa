@@ -19,9 +19,9 @@ namespace ClnTiendaropa
             using (var db = new Labsis457tiendaderopaEntities())
             {
                 return db.Compra
-                         .Include(c => c.Proveedor)
                          .Include(c => c.Usuario)
-                         .Where(c => c.estado == 1) // Solo compras activas
+                         .Include(c => c.Proveedor)
+                         .Where(c => c.estado == 1)
                          .ToList();
             }
         }
@@ -30,151 +30,88 @@ namespace ClnTiendaropa
         /// Obtiene una compra específica por su ID.
         /// </summary>
         /// <param name="id">ID de la compra</param>
-        /// <returns>Objeto Compra</returns>
+        /// <returns>Objeto de tipo Compra</returns>
         public Compra obtenerPorId(int id)
         {
             using (var db = new Labsis457tiendaderopaEntities())
             {
                 return db.Compra
-                         .Include(c => c.DetalleCompra.Select(d => d.Producto))
-                         .Include(c => c.Proveedor)
                          .Include(c => c.Usuario)
+                         .Include(c => c.Proveedor)
                          .FirstOrDefault(c => c.id == id);
             }
         }
 
         /// <summary>
-        /// Crea una nueva compra y sus detalles.
+        /// Crea una nueva compra.
         /// </summary>
-        /// <param name="compra">Objeto Compra</param>
-        /// <param name="detalles">Lista de detalles de compra</param>
-        public void crear(Compra compra, List<DetalleCompra> detalles)
+        /// <param name="compra">Objeto de tipo Compra</param>
+        public void crear(Compra compra)
         {
             using (var db = new Labsis457tiendaderopaEntities())
             {
-                using (var transaction = db.Database.BeginTransaction())
+                try
                 {
-                    try
-                    {
-                        // Registrar compra
-                        db.Compra.Add(compra);
-                        db.SaveChanges();
-
-                        // Registrar detalles
-                        foreach (var detalle in detalles)
-                        {
-                            detalle.idCompra = compra.id; // Relacionar con la compra creada
-                            db.DetalleCompra.Add(detalle);
-
-                            // Actualizar stock del producto
-                            var producto = db.Producto.Find(detalle.idProducto);
-                            if (producto != null)
-                            {
-                                producto.stock += detalle.cantidad;
-                                db.Entry(producto).State = EntityState.Modified;
-                            }
-                        }
-
-                        db.SaveChanges();
-                        transaction.Commit();
-                    }
-                    catch (Exception ex)
-                    {
-                        transaction.Rollback();
-                        throw new Exception("Error al crear la compra: " + ex.Message);
-                    }
+                    db.Compra.Add(compra);
+                    db.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al crear el proveedor: " + ex.Message, ex);
                 }
             }
         }
 
+
         /// <summary>
-        /// Actualiza una compra existente y sus detalles.
+        /// Actualiza una compra existente.
         /// </summary>
-        /// <param name="compra">Objeto Compra</param>
-        /// <param name="detalles">Lista de detalles de compra</param>
-        public void actualizar(Compra compra, List<DetalleCompra> detalles)
+        /// <param name="compra">Objeto de tipo Compra</param>
+        public void actualizar(Compra compra)
         {
+
             using (var db = new Labsis457tiendaderopaEntities())
             {
-                using (var transaction = db.Database.BeginTransaction())
+                var compraExistente = db.Compra.Find(compra.id);
+                if (compraExistente != null)
                 {
-                    try
-                    {
-                        // Actualizar compra
-                        var compraExistente = db.Compra.Find(compra.id);
-                        if (compraExistente == null)
-                        {
-                            throw new Exception("Compra no encontrada.");
-                        }
+                    compraExistente.idUsuario = compra.idUsuario;
+                    compraExistente.idProveedor = compra.idProveedor;
+                    compraExistente.tipoDocumento = compra.tipoDocumento;
+                    compraExistente.numeroDocumento = compra.numeroDocumento;
+                    compraExistente.montoTotal = compra.montoTotal;
+                    compraExistente.usuarioRegistro = compra.usuarioRegistro;
+                    compraExistente.fechaRegistro = compra.fechaRegistro;
+                    compraExistente.estado = compra.estado;
 
-                        compraExistente.tipoDocumento = compra.tipoDocumento;
-                        compraExistente.numeroDocumento = compra.numeroDocumento;
-                        compraExistente.montoTotal = compra.montoTotal;
-                        compraExistente.idProveedor = compra.idProveedor;
-                        compraExistente.estado = compra.estado;
-
-                        db.Entry(compraExistente).State = EntityState.Modified;
-
-                        // Eliminar detalles existentes
-                        var detallesExistentes = db.DetalleCompra.Where(d => d.idCompra == compra.id).ToList();
-                        foreach (var detalle in detallesExistentes)
-                        {
-                            // Reducir el stock de los productos
-                            var producto = db.Producto.Find(detalle.idProducto);
-                            if (producto != null)
-                            {
-                                producto.stock -= detalle.cantidad;
-                                db.Entry(producto).State = EntityState.Modified;
-                            }
-                            db.DetalleCompra.Remove(detalle);
-                        }
-
-                        // Agregar nuevos detalles
-                        foreach (var detalle in detalles)
-                        {
-                            detalle.idCompra = compra.id;
-                            db.DetalleCompra.Add(detalle);
-
-                            // Actualizar stock del producto
-                            var producto = db.Producto.Find(detalle.idProducto);
-                            if (producto != null)
-                            {
-                                producto.stock += detalle.cantidad;
-                                db.Entry(producto).State = EntityState.Modified;
-                            }
-                        }
-
-                        db.SaveChanges();
-                        transaction.Commit();
-                    }
-                    catch (Exception ex)
-                    {
-                        transaction.Rollback();
-                        throw new Exception("Error al actualizar la compra: " + ex.Message);
-                    }
+                    db.Entry(compraExistente).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
+                else
+                {
+                    throw new Exception("Compra no encontrada para actualizar.");
                 }
             }
         }
 
-        /// <summary>
-        /// Elimina lógicamente una compra por su ID.
-        /// </summary>
-        /// <param name="id">ID de la compra</param>
-        public void eliminar(int id)
+            /// <summary>
+            /// Elimina lógicamente una compra por su ID.
+            /// </summary>
+            /// <param name="id">ID de la compra</param>
+            public void eliminar(int id)
         {
             using (var db = new Labsis457tiendaderopaEntities())
             {
                 var compraExistente = db.Compra.Find(id);
                 if (compraExistente != null)
                 {
-                    compraExistente.estado = 0; // Marcar como inactivo
+                    compraExistente.estado = 0; // Marcamos como inactivo
                     db.Entry(compraExistente).State = EntityState.Modified;
-
                     db.SaveChanges();
                 }
                 else
                 {
-                    throw new Exception("Compra no encontrada.");
+                    throw new Exception("Compra no encontrada para eliminar.");
                 }
             }
         }

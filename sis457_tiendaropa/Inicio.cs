@@ -52,9 +52,6 @@ namespace sis457_tiendaropa
                 formularioActual = formulario;
                 formulario.TopLevel = false;
                 formulario.FormBorderStyle = FormBorderStyle.None;
-          
-               
-
                 contenedor.Controls.Add(formulario);
                 contenedor.Tag = formulario;
                 formulario.BringToFront();
@@ -84,10 +81,6 @@ namespace sis457_tiendaropa
 
             userActual.Text = usuarioActual.usuario1;
         }
-
-
-
-
 
         private void menuusuario_Click(object sender, EventArgs e)
         {
@@ -171,6 +164,11 @@ namespace sis457_tiendaropa
                 abrirFormulario((IconMenuItem)sender, new frmUsuarios());
             
 
+
+        }
+
+        private void menuTitulo_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
 
         }
     }
