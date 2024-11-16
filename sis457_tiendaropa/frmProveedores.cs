@@ -148,5 +148,7 @@ namespace sis457_tiendaropa
                 combestado.SelectedIndex = proveedor.estado == 1 ? 1 : 0;
             }
         }
+
+       
     }
 }

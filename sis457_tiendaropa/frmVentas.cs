@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace sis457_tiendaropa
 {
@@ -92,17 +93,11 @@ namespace sis457_tiendaropa
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textVentaId.Text))
-            {
-                MessageBox.Show("Seleccione una venta para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            int ventaId = int.Parse(textVentaId.Text);
-            VentaCln.Delete(ventaId);
+        
+            VentaCln.Delete(Convert.ToInt32(textVentaId.Text));
             MessageBox.Show("Venta eliminada correctamente", "Eliminar Venta", MessageBoxButtons.OK, MessageBoxIcon.Information);
             LimpiarFormulario();
-            CargarVentas(); // Actualizar el DataGridView después de eliminar
+            CargarVentas(); 
         }
 
         private void LimpiarFormulario()
@@ -156,5 +151,7 @@ namespace sis457_tiendaropa
                 }
             }
         }
+
+        
     }
 }

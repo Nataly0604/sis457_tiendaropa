@@ -67,15 +67,15 @@ namespace ClnTiendaropa
             // Método para eliminar una venta (cambia el estado a inactivo)
             public static void Delete(int id)
             {
-                using (var context = new Labsis457tiendaderopaEntities())
+            using (var db = new Labsis457tiendaderopaEntities())
+            {
+                var Ventas = db.Venta.Find(id);
+                if (Ventas != null)
                 {
-                    var venta = context.Venta.FirstOrDefault(v => v.id == id);
-                    if (venta != null)
-                    {
-                        venta.estado = 0; // 0 representa estado inactivo
-                        context.SaveChanges();
-                    }
+                    db.Venta.Remove(Ventas);
+                    db.SaveChanges();
                 }
             }
+        }
         }
     }

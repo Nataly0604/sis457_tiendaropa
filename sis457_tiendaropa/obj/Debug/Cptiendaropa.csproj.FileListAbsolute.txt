@@ -54,3 +54,36 @@ D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Deb
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmProveedores.resources
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmReportes.resources
 D:\job\nata\fileToTest\Nueva carpeta\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmVentas.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\sis457_tiendaropa.exe.config
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\sis457_tiendaropa.exe
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\sis457_tiendaropa.pdb
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\CadTiendaropa.dll
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\ClnTiendaropa.dll
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\CadTiendaropa.pdb
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\CadTiendaropa.dll.config
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\ClnTiendaropa.pdb
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\ClnTiendaropa.dll.config
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\Cptiendaropa.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.Autentication.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmCategoria.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmClientes.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmcompras.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmDetalleCompra.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmDetalleVentas.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmProducto.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmProveedores.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmReportes.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmUsuarios.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.frmVentas.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.Inicio.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.Properties.Resources.resources
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\Cptiendaropa.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\Cptiendaropa.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\Cptienda.1A6BEE3D.Up2Date
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.exe
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\sis457_tiendaropa\obj\Debug\sis457_tiendaropa.pdb

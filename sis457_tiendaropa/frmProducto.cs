@@ -161,5 +161,20 @@ namespace sis457_tiendaropa
             }
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(textbuscar.Text);
+            Producto resultado = new ProductoCln().obtenerPorId(id); if (resultado != null)
+            {
+                dgvdata.DataSource = new List<Producto> { resultado }; // Para mostrar el resultado en el DataGridView // MessageBox.Show("Producto cargado correctamente", "Buscar Producto", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+                CargarProductos();
+            Limpiar();
+
+
+
+           
+
+        }
     }
 }
