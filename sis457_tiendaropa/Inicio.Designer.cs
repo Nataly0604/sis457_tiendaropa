@@ -68,7 +68,7 @@ namespace sis457_tiendaropa
             this.menu.Location = new System.Drawing.Point(0, 59);
             this.menu.Name = "menu";
             this.menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menu.Size = new System.Drawing.Size(126, 453);
+            this.menu.Size = new System.Drawing.Size(90, 453);
             this.menu.TabIndex = 2;
             this.menu.Text = "menuStrip1";
             // 
@@ -247,21 +247,22 @@ namespace sis457_tiendaropa
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Plum;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(350, 9);
+            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Crimson;
+            this.label1.Location = new System.Drawing.Point(393, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 25);
+            this.label1.Size = new System.Drawing.Size(123, 42);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Sistema venta de ropa";
+            this.label1.Text = "Jandra";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // contenedor
             // 
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.contenedor.Location = new System.Drawing.Point(126, 59);
+            this.contenedor.Location = new System.Drawing.Point(90, 59);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(735, 453);
+            this.contenedor.Size = new System.Drawing.Size(771, 453);
             this.contenedor.TabIndex = 5;
             this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
             // 

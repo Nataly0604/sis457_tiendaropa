@@ -30,14 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtclave = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btningresar = new FontAwesome.Sharp.IconButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.btncancelar = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.btningresar = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // label1
@@ -60,20 +59,6 @@
             this.label2.Size = new System.Drawing.Size(131, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "venta de ropa";
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Plum;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.StoreAlt;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 93;
-            this.iconPictureBox1.Location = new System.Drawing.Point(29, 28);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(93, 100);
-            this.iconPictureBox1.TabIndex = 2;
-            this.iconPictureBox1.TabStop = false;
             // 
             // txtnombre
             // 
@@ -108,26 +93,15 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Nro Documento";
             // 
-            // btningresar
+            // button1
             // 
-            this.btningresar.BackColor = System.Drawing.Color.Plum;
-            this.btningresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btningresar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btningresar.FlatAppearance.BorderSize = 2;
-            this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btningresar.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btningresar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.btningresar.IconColor = System.Drawing.Color.White;
-            this.btningresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btningresar.IconSize = 19;
-            this.btningresar.Location = new System.Drawing.Point(182, 144);
-            this.btningresar.Name = "btningresar";
-            this.btningresar.Size = new System.Drawing.Size(75, 23);
-            this.btningresar.TabIndex = 7;
-            this.btningresar.Text = "ingresar";
-            this.btningresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btningresar.UseVisualStyleBackColor = false;
-            this.btningresar.Click += new System.EventHandler(this.btningresar_Click);
+            this.button1.Image = global::sis457_tiendaropa.Properties.Resources.Diseño_sin_título__1_;
+            this.button1.Location = new System.Drawing.Point(3, 0);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button1.Size = new System.Drawing.Size(158, 187);
+            this.button1.TabIndex = 9;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btncancelar
             // 
@@ -150,25 +124,45 @@
             this.btncancelar.UseVisualStyleBackColor = false;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
+            // btningresar
+            // 
+            this.btningresar.BackColor = System.Drawing.Color.Plum;
+            this.btningresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btningresar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btningresar.FlatAppearance.BorderSize = 2;
+            this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btningresar.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btningresar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.btningresar.IconColor = System.Drawing.Color.White;
+            this.btningresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btningresar.IconSize = 19;
+            this.btningresar.Location = new System.Drawing.Point(182, 144);
+            this.btningresar.Name = "btningresar";
+            this.btningresar.Size = new System.Drawing.Size(75, 23);
+            this.btningresar.TabIndex = 7;
+            this.btningresar.Text = "ingresar";
+            this.btningresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btningresar.UseVisualStyleBackColor = false;
+            this.btningresar.Click += new System.EventHandler(this.btningresar_Click);
+            // 
             // Autentication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 189);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btningresar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtclave);
             this.Controls.Add(this.txtnombre);
-            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Autentication";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autentication";
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,12 +172,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconButton btningresar;
         private FontAwesome.Sharp.IconButton btncancelar;
+        private System.Windows.Forms.Button button1;
     }
 }
