@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textid = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.dgvdata = new System.Windows.Forms.DataGridView();
             this.btnseleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,36 +57,27 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textprecioventa = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.textbuscar = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btneliminar = new FontAwesome.Sharp.IconButton();
             this.btnguardar = new FontAwesome.Sharp.IconButton();
             this.btneditar = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.textbuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
             // textid
             // 
             this.textid.Location = new System.Drawing.Point(205, 44);
-            this.textid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textid.Margin = new System.Windows.Forms.Padding(4);
             this.textid.Name = "textid";
             this.textid.Size = new System.Drawing.Size(55, 22);
             this.textid.TabIndex = 35;
             // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(559, 11);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(259, 55);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "lista de productos";
-            // 
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
+            this.dgvdata.BackgroundColor = System.Drawing.Color.MistyRose;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,7 +99,7 @@
             this.precioventa,
             this.estado});
             this.dgvdata.Location = new System.Drawing.Point(355, 97);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -224,7 +214,7 @@
             this.combestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combestado.FormattingEnabled = true;
             this.combestado.Location = new System.Drawing.Point(51, 398);
-            this.combestado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combestado.Margin = new System.Windows.Forms.Padding(4);
             this.combestado.Name = "combestado";
             this.combestado.Size = new System.Drawing.Size(209, 24);
             this.combestado.TabIndex = 27;
@@ -234,7 +224,7 @@
             this.combcategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combcategoria.FormattingEnabled = true;
             this.combcategoria.Location = new System.Drawing.Point(51, 97);
-            this.combcategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combcategoria.Margin = new System.Windows.Forms.Padding(4);
             this.combcategoria.Name = "combcategoria";
             this.combcategoria.Size = new System.Drawing.Size(209, 24);
             this.combcategoria.TabIndex = 26;
@@ -253,7 +243,7 @@
             // textdescripcion
             // 
             this.textdescripcion.Location = new System.Drawing.Point(51, 254);
-            this.textdescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textdescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.textdescripcion.Name = "textdescripcion";
             this.textdescripcion.Size = new System.Drawing.Size(209, 22);
             this.textdescripcion.TabIndex = 24;
@@ -261,7 +251,7 @@
             // textcodigo
             // 
             this.textcodigo.Location = new System.Drawing.Point(51, 146);
-            this.textcodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textcodigo.Margin = new System.Windows.Forms.Padding(4);
             this.textcodigo.Name = "textcodigo";
             this.textcodigo.Size = new System.Drawing.Size(209, 22);
             this.textcodigo.TabIndex = 23;
@@ -269,7 +259,7 @@
             // textnombre
             // 
             this.textnombre.Location = new System.Drawing.Point(51, 194);
-            this.textnombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textnombre.Margin = new System.Windows.Forms.Padding(4);
             this.textnombre.Name = "textnombre";
             this.textnombre.Size = new System.Drawing.Size(209, 22);
             this.textnombre.TabIndex = 22;
@@ -320,7 +310,7 @@
             // textstock
             // 
             this.textstock.Location = new System.Drawing.Point(51, 302);
-            this.textstock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textstock.Margin = new System.Windows.Forms.Padding(4);
             this.textstock.Name = "textstock";
             this.textstock.Size = new System.Drawing.Size(209, 22);
             this.textstock.TabIndex = 37;
@@ -339,7 +329,7 @@
             // textprecioventa
             // 
             this.textprecioventa.Location = new System.Drawing.Point(51, 350);
-            this.textprecioventa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textprecioventa.Margin = new System.Windows.Forms.Padding(4);
             this.textprecioventa.Name = "textprecioventa";
             this.textprecioventa.Size = new System.Drawing.Size(209, 22);
             this.textprecioventa.TabIndex = 39;
@@ -355,6 +345,47 @@
             this.label8.TabIndex = 40;
             this.label8.Text = "Nombre";
             // 
+            // textbuscar
+            // 
+            this.textbuscar.Location = new System.Drawing.Point(594, 479);
+            this.textbuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.textbuscar.Name = "textbuscar";
+            this.textbuscar.Size = new System.Drawing.Size(55, 22);
+            this.textbuscar.TabIndex = 42;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(464, 15);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(294, 56);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "PRODUCTOS";
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.Maroon;
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.iconButton1.IconColor = System.Drawing.Color.Snow;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 17;
+            this.iconButton1.Location = new System.Drawing.Point(672, 466);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(122, 35);
+            this.iconButton1.TabIndex = 41;
+            this.iconButton1.Text = "buscar";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
             // btneliminar
             // 
             this.btneliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -367,7 +398,7 @@
             this.btneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btneliminar.IconSize = 17;
             this.btneliminar.Location = new System.Drawing.Point(161, 466);
-            this.btneliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btneliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(100, 28);
             this.btneliminar.TabIndex = 31;
@@ -389,7 +420,7 @@
             this.btnguardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnguardar.IconSize = 17;
             this.btnguardar.Location = new System.Drawing.Point(51, 431);
-            this.btnguardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnguardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(211, 28);
             this.btnguardar.TabIndex = 30;
@@ -411,7 +442,7 @@
             this.btneditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btneditar.IconSize = 17;
             this.btneditar.Location = new System.Drawing.Point(51, 466);
-            this.btneditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btneditar.Margin = new System.Windows.Forms.Padding(4);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(100, 28);
             this.btneditar.TabIndex = 29;
@@ -421,42 +452,13 @@
             this.btneditar.UseVisualStyleBackColor = false;
             this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.DarkCyan;
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 17;
-            this.iconButton1.Location = new System.Drawing.Point(672, 466);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(100, 28);
-            this.iconButton1.TabIndex = 41;
-            this.iconButton1.Text = "buscar";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // textbuscar
-            // 
-            this.textbuscar.Location = new System.Drawing.Point(564, 466);
-            this.textbuscar.Margin = new System.Windows.Forms.Padding(4);
-            this.textbuscar.Name = "textbuscar";
-            this.textbuscar.Size = new System.Drawing.Size(55, 22);
-            this.textbuscar.TabIndex = 42;
-            // 
             // frmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textbuscar);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.label8);
@@ -464,7 +466,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textstock);
             this.Controls.Add(this.textid);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btneliminar);
@@ -481,8 +482,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmProducto";
             this.Load += new System.EventHandler(this.frmProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).EndInit();
@@ -494,7 +496,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox textid;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvdata;
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconButton btneliminar;
@@ -526,5 +527,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.TextBox textbuscar;
+        private System.Windows.Forms.Label label7;
     }
 }

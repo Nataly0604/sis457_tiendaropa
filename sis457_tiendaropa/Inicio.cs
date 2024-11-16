@@ -148,20 +148,24 @@ namespace sis457_tiendaropa
 
         private void submenuCategoria_Click_1(object sender, EventArgs e)
         {
-            abrirFormulario((IconMenuItem)sender, new frmCategoria());
+            frmCategoria categoriaForm = new frmCategoria();
+
+            // Mostrar el formulario de forma independiente
+            categoriaForm.Show();
+            
         }
 
         private void submenuProducto_Click_1(object sender, EventArgs e)
         {
 
-            abrirFormulario((IconMenuItem)sender, new frmProducto());
+            new frmProducto().ShowDialog();
         }
 
         private void menuusuarios_Click(object sender, EventArgs e)
         {
 
      
-                abrirFormulario((IconMenuItem)sender, new frmUsuarios());
+                new frmUsuarios().ShowDialog();
             
 
 

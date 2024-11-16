@@ -63,6 +63,16 @@ namespace sis457_tiendaropa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap añadir_al_carrito {
+            get {
+                object obj = ResourceManager.GetObject("añadir al carrito", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel {
             get {
                 object obj = ResourceManager.GetObject("cancel", resourceCulture);
@@ -126,6 +136,26 @@ namespace sis457_tiendaropa.Properties {
         internal static System.Drawing.Bitmap Diseño_sin_título__4_ {
             get {
                 object obj = ResourceManager.GetObject("Diseño sin título (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ffo {
+            get {
+                object obj = ResourceManager.GetObject("ffo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_agregar_a_carrito_de_compras_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-agregar-a-carrito-de-compras-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

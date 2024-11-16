@@ -32,6 +32,11 @@ namespace sis457_tiendaropa
         private void InitializeComponent()
         {
             this.menu = new System.Windows.Forms.MenuStrip();
+            this.menuTitulo = new System.Windows.Forms.MenuStrip();
+            this.label1 = new System.Windows.Forms.Label();
+            this.contenedor = new System.Windows.Forms.Panel();
+            this.userActual = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuusuarios = new FontAwesome.Sharp.IconMenuItem();
             this.menumantenedor = new FontAwesome.Sharp.IconMenuItem();
             this.submenuCategoria = new FontAwesome.Sharp.IconMenuItem();
@@ -45,17 +50,16 @@ namespace sis457_tiendaropa
             this.menuclientes = new FontAwesome.Sharp.IconMenuItem();
             this.menuproveedores = new FontAwesome.Sharp.IconMenuItem();
             this.menureportes = new FontAwesome.Sharp.IconMenuItem();
-            this.menuTitulo = new System.Windows.Forms.MenuStrip();
-            this.label1 = new System.Windows.Forms.Label();
-            this.contenedor = new System.Windows.Forms.Panel();
-            this.userActual = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
+            this.contenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
             // 
             this.menu.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.menu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuusuarios,
             this.menumantenedor,
@@ -65,12 +69,75 @@ namespace sis457_tiendaropa
             this.menuproveedores,
             this.menureportes});
             this.menu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.menu.Location = new System.Drawing.Point(0, 59);
+            this.menu.Location = new System.Drawing.Point(0, 73);
             this.menu.Name = "menu";
             this.menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menu.Size = new System.Drawing.Size(90, 453);
+            this.menu.Size = new System.Drawing.Size(114, 557);
             this.menu.TabIndex = 2;
             this.menu.Text = "menuStrip1";
+            // 
+            // menuTitulo
+            // 
+            this.menuTitulo.AutoSize = false;
+            this.menuTitulo.BackColor = System.Drawing.Color.DeepPink;
+            this.menuTitulo.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuTitulo.Location = new System.Drawing.Point(0, 0);
+            this.menuTitulo.Name = "menuTitulo";
+            this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuTitulo.Size = new System.Drawing.Size(1148, 73);
+            this.menuTitulo.TabIndex = 3;
+            this.menuTitulo.Text = "JANDRA LENCERIA";
+            this.menuTitulo.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuTitulo_ItemClicked);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.GhostWhite;
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(343, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(322, 43);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Jandra Lenceria";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // contenedor
+            // 
+            this.contenedor.Controls.Add(this.pictureBox1);
+            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contenedor.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.contenedor.Location = new System.Drawing.Point(114, 73);
+            this.contenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.contenedor.Name = "contenedor";
+            this.contenedor.Size = new System.Drawing.Size(1034, 557);
+            this.contenedor.TabIndex = 5;
+            this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
+            // 
+            // userActual
+            // 
+            this.userActual.AutoSize = true;
+            this.userActual.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.userActual.Font = new System.Drawing.Font("MT Extra", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.userActual.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userActual.Location = new System.Drawing.Point(987, 27);
+            this.userActual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.userActual.Name = "userActual";
+            this.userActual.Size = new System.Drawing.Size(113, 25);
+            this.userActual.TabIndex = 6;
+            this.userActual.Text = "label2";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::sis457_tiendaropa.Properties.Resources.ffo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1034, 557);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // menuusuarios
             // 
@@ -80,7 +147,7 @@ namespace sis457_tiendaropa
             this.menuusuarios.IconSize = 30;
             this.menuusuarios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuusuarios.Name = "menuusuarios";
-            this.menuusuarios.Size = new System.Drawing.Size(77, 49);
+            this.menuusuarios.Size = new System.Drawing.Size(97, 54);
             this.menuusuarios.Text = "usuarios ";
             this.menuusuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuusuarios.Click += new System.EventHandler(this.menuusuario_Click);
@@ -96,7 +163,7 @@ namespace sis457_tiendaropa
             this.menumantenedor.IconSize = 30;
             this.menumantenedor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menumantenedor.Name = "menumantenedor";
-            this.menumantenedor.Size = new System.Drawing.Size(77, 49);
+            this.menumantenedor.Size = new System.Drawing.Size(97, 54);
             this.menumantenedor.Text = "mantenedor";
             this.menumantenedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -107,7 +174,7 @@ namespace sis457_tiendaropa
             this.submenuCategoria.IconColor = System.Drawing.Color.Black;
             this.submenuCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuCategoria.Name = "submenuCategoria";
-            this.submenuCategoria.Size = new System.Drawing.Size(180, 22);
+            this.submenuCategoria.Size = new System.Drawing.Size(157, 26);
             this.submenuCategoria.Text = "Categoria";
             this.submenuCategoria.Click += new System.EventHandler(this.submenuCategoria_Click_1);
             // 
@@ -117,7 +184,7 @@ namespace sis457_tiendaropa
             this.submenuProducto.IconColor = System.Drawing.Color.Black;
             this.submenuProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuProducto.Name = "submenuProducto";
-            this.submenuProducto.Size = new System.Drawing.Size(180, 22);
+            this.submenuProducto.Size = new System.Drawing.Size(157, 26);
             this.submenuProducto.Text = "producto";
             this.submenuProducto.Click += new System.EventHandler(this.submenuProducto_Click_1);
             // 
@@ -132,7 +199,7 @@ namespace sis457_tiendaropa
             this.menuventas.IconSize = 30;
             this.menuventas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuventas.Name = "menuventas";
-            this.menuventas.Size = new System.Drawing.Size(77, 49);
+            this.menuventas.Size = new System.Drawing.Size(97, 54);
             this.menuventas.Text = "ventas";
             this.menuventas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuventas.Click += new System.EventHandler(this.menuventas_Click);
@@ -143,8 +210,8 @@ namespace sis457_tiendaropa
             this.submenuregistrar.IconColor = System.Drawing.Color.Black;
             this.submenuregistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuregistrar.Name = "submenuregistrar";
-            this.submenuregistrar.Size = new System.Drawing.Size(180, 22);
-            this.submenuregistrar.Text = "regitrar";
+            this.submenuregistrar.Size = new System.Drawing.Size(168, 26);
+            this.submenuregistrar.Text = "registrar";
             this.submenuregistrar.Click += new System.EventHandler(this.submenuregistrar_Click);
             // 
             // submenuverdetalle
@@ -153,7 +220,7 @@ namespace sis457_tiendaropa
             this.submenuverdetalle.IconColor = System.Drawing.Color.Black;
             this.submenuverdetalle.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuverdetalle.Name = "submenuverdetalle";
-            this.submenuverdetalle.Size = new System.Drawing.Size(180, 22);
+            this.submenuverdetalle.Size = new System.Drawing.Size(168, 26);
             this.submenuverdetalle.Text = "ver detalles";
             this.submenuverdetalle.Click += new System.EventHandler(this.submenuverdetalle_Click);
             // 
@@ -168,7 +235,7 @@ namespace sis457_tiendaropa
             this.menucompras.IconSize = 30;
             this.menucompras.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menucompras.Name = "menucompras";
-            this.menucompras.Size = new System.Drawing.Size(77, 49);
+            this.menucompras.Size = new System.Drawing.Size(97, 54);
             this.menucompras.Text = "compras";
             this.menucompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -178,8 +245,8 @@ namespace sis457_tiendaropa
             this.submenuregistraventa.IconColor = System.Drawing.Color.Black;
             this.submenuregistraventa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuregistraventa.Name = "submenuregistraventa";
-            this.submenuregistraventa.Size = new System.Drawing.Size(180, 22);
-            this.submenuregistraventa.Text = "regitrar";
+            this.submenuregistraventa.Size = new System.Drawing.Size(165, 26);
+            this.submenuregistraventa.Text = "Registrar";
             this.submenuregistraventa.Click += new System.EventHandler(this.submenuregistraventa_Click);
             // 
             // submenuverdetallecompra
@@ -188,8 +255,8 @@ namespace sis457_tiendaropa
             this.submenuverdetallecompra.IconColor = System.Drawing.Color.Black;
             this.submenuverdetallecompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuverdetallecompra.Name = "submenuverdetallecompra";
-            this.submenuverdetallecompra.Size = new System.Drawing.Size(180, 22);
-            this.submenuverdetallecompra.Text = "ver detallr";
+            this.submenuverdetallecompra.Size = new System.Drawing.Size(165, 26);
+            this.submenuverdetallecompra.Text = "Ver Detalle";
             this.submenuverdetallecompra.Click += new System.EventHandler(this.submenuverdetallecompra_Click);
             // 
             // menuclientes
@@ -200,7 +267,7 @@ namespace sis457_tiendaropa
             this.menuclientes.IconSize = 30;
             this.menuclientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuclientes.Name = "menuclientes";
-            this.menuclientes.Size = new System.Drawing.Size(77, 49);
+            this.menuclientes.Size = new System.Drawing.Size(97, 54);
             this.menuclientes.Text = "clientes";
             this.menuclientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuclientes.Click += new System.EventHandler(this.menuclientes_Click);
@@ -213,7 +280,7 @@ namespace sis457_tiendaropa
             this.menuproveedores.IconSize = 30;
             this.menuproveedores.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuproveedores.Name = "menuproveedores";
-            this.menuproveedores.Size = new System.Drawing.Size(77, 49);
+            this.menuproveedores.Size = new System.Drawing.Size(97, 54);
             this.menuproveedores.Text = "proveedores";
             this.menuproveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuproveedores.Click += new System.EventHandler(this.menuproveedores_Click);
@@ -226,75 +293,32 @@ namespace sis457_tiendaropa
             this.menureportes.IconSize = 30;
             this.menureportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menureportes.Name = "menureportes";
-            this.menureportes.Size = new System.Drawing.Size(77, 49);
+            this.menureportes.Size = new System.Drawing.Size(97, 54);
             this.menureportes.Text = "reportes";
             this.menureportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menureportes.Click += new System.EventHandler(this.menureportes_Click);
             // 
-            // menuTitulo
-            // 
-            this.menuTitulo.AutoSize = false;
-            this.menuTitulo.BackColor = System.Drawing.Color.Plum;
-            this.menuTitulo.Location = new System.Drawing.Point(0, 0);
-            this.menuTitulo.Name = "menuTitulo";
-            this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuTitulo.Size = new System.Drawing.Size(861, 59);
-            this.menuTitulo.TabIndex = 3;
-            this.menuTitulo.Text = "asda";
-            this.menuTitulo.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuTitulo_ItemClicked);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Plum;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(393, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 42);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Jandra";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // contenedor
-            // 
-            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.contenedor.Location = new System.Drawing.Point(90, 59);
-            this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(771, 453);
-            this.contenedor.TabIndex = 5;
-            this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
-            // 
-            // userActual
-            // 
-            this.userActual.AutoSize = true;
-            this.userActual.BackColor = System.Drawing.Color.Plum;
-            this.userActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userActual.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userActual.Location = new System.Drawing.Point(740, 22);
-            this.userActual.Name = "userActual";
-            this.userActual.Size = new System.Drawing.Size(64, 25);
-            this.userActual.TabIndex = 6;
-            this.userActual.Text = "label2";
-            // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 512);
+            this.ClientSize = new System.Drawing.Size(1148, 630);
             this.Controls.Add(this.userActual);
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menuTitulo);
             this.MainMenuStrip = this.menu;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            this.contenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,6 +343,7 @@ namespace sis457_tiendaropa
         private FontAwesome.Sharp.IconMenuItem submenuregistraventa;
         private FontAwesome.Sharp.IconMenuItem submenuverdetallecompra;
         private FontAwesome.Sharp.IconMenuItem submenuCategoria;
+        private PictureBox pictureBox1;
     }
 }
 

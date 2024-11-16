@@ -45,7 +45,6 @@
             this.combproducto = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.agregarproducto = new System.Windows.Forms.Button();
             this.guardarcompra = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.numericcantidad = new System.Windows.Forms.NumericUpDown();
             this.numericcompraprecio = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
+            this.agregarproducto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericcantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericcompraprecio)).BeginInit();
@@ -83,7 +83,7 @@
             // 
             this.combusuario.FormattingEnabled = true;
             this.combusuario.Location = new System.Drawing.Point(88, 65);
-            this.combusuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combusuario.Margin = new System.Windows.Forms.Padding(4);
             this.combusuario.Name = "combusuario";
             this.combusuario.Size = new System.Drawing.Size(129, 24);
             this.combusuario.TabIndex = 1;
@@ -91,10 +91,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(84, 47);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 16);
+            this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "usuario";
             // 
@@ -121,7 +122,7 @@
             // textnumerodocumento
             // 
             this.textnumerodocumento.Location = new System.Drawing.Point(555, 66);
-            this.textnumerodocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textnumerodocumento.Margin = new System.Windows.Forms.Padding(4);
             this.textnumerodocumento.Name = "textnumerodocumento";
             this.textnumerodocumento.Size = new System.Drawing.Size(132, 22);
             this.textnumerodocumento.TabIndex = 8;
@@ -160,7 +161,7 @@
             // 
             this.combestado.FormattingEnabled = true;
             this.combestado.Location = new System.Drawing.Point(892, 65);
-            this.combestado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combestado.Margin = new System.Windows.Forms.Padding(4);
             this.combestado.Name = "combestado";
             this.combestado.Size = new System.Drawing.Size(129, 24);
             this.combestado.TabIndex = 12;
@@ -190,7 +191,7 @@
             // 
             this.combproducto.FormattingEnabled = true;
             this.combproducto.Location = new System.Drawing.Point(16, 186);
-            this.combproducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combproducto.Margin = new System.Windows.Forms.Padding(4);
             this.combproducto.Name = "combproducto";
             this.combproducto.Size = new System.Drawing.Size(156, 24);
             this.combproducto.TabIndex = 14;
@@ -215,21 +216,10 @@
             this.label11.TabIndex = 18;
             this.label11.Text = "cantidad";
             // 
-            // agregarproducto
-            // 
-            this.agregarproducto.Location = new System.Drawing.Point(787, 183);
-            this.agregarproducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.agregarproducto.Name = "agregarproducto";
-            this.agregarproducto.Size = new System.Drawing.Size(164, 28);
-            this.agregarproducto.TabIndex = 24;
-            this.agregarproducto.Text = "agregar producto";
-            this.agregarproducto.UseVisualStyleBackColor = true;
-            this.agregarproducto.Click += new System.EventHandler(this.agregarproducto_Click);
-            // 
             // guardarcompra
             // 
             this.guardarcompra.Location = new System.Drawing.Point(787, 370);
-            this.guardarcompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guardarcompra.Margin = new System.Windows.Forms.Padding(4);
             this.guardarcompra.Name = "guardarcompra";
             this.guardarcompra.Size = new System.Drawing.Size(164, 28);
             this.guardarcompra.TabIndex = 25;
@@ -289,7 +279,7 @@
             this.Cantidad,
             this.Subtotaldgv});
             this.dgvdata.Location = new System.Drawing.Point(184, 134);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -355,7 +345,7 @@
             // 
             this.comproveedor.FormattingEnabled = true;
             this.comproveedor.Location = new System.Drawing.Point(227, 65);
-            this.comproveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comproveedor.Margin = new System.Windows.Forms.Padding(4);
             this.comproveedor.Name = "comproveedor";
             this.comproveedor.Size = new System.Drawing.Size(129, 24);
             this.comproveedor.TabIndex = 37;
@@ -363,7 +353,7 @@
             // textCompraId
             // 
             this.textCompraId.Location = new System.Drawing.Point(23, 65);
-            this.textCompraId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textCompraId.Margin = new System.Windows.Forms.Padding(4);
             this.textCompraId.Name = "textCompraId";
             this.textCompraId.Size = new System.Drawing.Size(35, 22);
             this.textCompraId.TabIndex = 38;
@@ -372,7 +362,7 @@
             // 
             this.combtipodocumento.FormattingEnabled = true;
             this.combtipodocumento.Location = new System.Drawing.Point(397, 65);
-            this.combtipodocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combtipodocumento.Margin = new System.Windows.Forms.Padding(4);
             this.combtipodocumento.Name = "combtipodocumento";
             this.combtipodocumento.Size = new System.Drawing.Size(129, 24);
             this.combtipodocumento.TabIndex = 39;
@@ -380,7 +370,7 @@
             // numericcantidad
             // 
             this.numericcantidad.Location = new System.Drawing.Point(13, 319);
-            this.numericcantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericcantidad.Margin = new System.Windows.Forms.Padding(4);
             this.numericcantidad.Name = "numericcantidad";
             this.numericcantidad.Size = new System.Drawing.Size(160, 22);
             this.numericcantidad.TabIndex = 21;
@@ -388,7 +378,7 @@
             // numericcompraprecio
             // 
             this.numericcompraprecio.Location = new System.Drawing.Point(13, 251);
-            this.numericcompraprecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericcompraprecio.Margin = new System.Windows.Forms.Padding(4);
             this.numericcompraprecio.Name = "numericcompraprecio";
             this.numericcompraprecio.Size = new System.Drawing.Size(160, 22);
             this.numericcompraprecio.TabIndex = 41;
@@ -403,10 +393,26 @@
             this.label6.TabIndex = 42;
             this.label6.Text = "FORMULARIO DE COMPRAS";
             // 
+            // agregarproducto
+            // 
+            this.agregarproducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agregarproducto.Image = global::sis457_tiendaropa.Properties.Resources.icons8_agregar_a_carrito_de_compras_100;
+            this.agregarproducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.agregarproducto.Location = new System.Drawing.Point(838, 167);
+            this.agregarproducto.Margin = new System.Windows.Forms.Padding(4);
+            this.agregarproducto.Name = "agregarproducto";
+            this.agregarproducto.Size = new System.Drawing.Size(135, 148);
+            this.agregarproducto.TabIndex = 24;
+            this.agregarproducto.Text = "agregar producto";
+            this.agregarproducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.agregarproducto.UseVisualStyleBackColor = true;
+            this.agregarproducto.Click += new System.EventHandler(this.agregarproducto_Click);
+            // 
             // frmcompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.numericcompraprecio);
@@ -435,7 +441,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.combusuario);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmcompras";
             this.Text = "frmcompras";
             this.Load += new System.EventHandler(this.frmcompras_Load);

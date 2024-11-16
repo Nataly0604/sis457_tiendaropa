@@ -89,7 +89,7 @@
             this.btncancelar.Location = new System.Drawing.Point(395, 177);
             this.btncancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(100, 28);
+            this.btncancelar.Size = new System.Drawing.Size(105, 41);
             this.btncancelar.TabIndex = 8;
             this.btncancelar.Text = "salir";
             this.btncancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -108,10 +108,10 @@
             this.btningresar.IconColor = System.Drawing.Color.White;
             this.btningresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btningresar.IconSize = 19;
-            this.btningresar.Location = new System.Drawing.Point(243, 177);
+            this.btningresar.Location = new System.Drawing.Point(233, 177);
             this.btningresar.Margin = new System.Windows.Forms.Padding(4);
             this.btningresar.Name = "btningresar";
-            this.btningresar.Size = new System.Drawing.Size(100, 28);
+            this.btningresar.Size = new System.Drawing.Size(121, 41);
             this.btningresar.TabIndex = 7;
             this.btningresar.Text = "ingresar";
             this.btningresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -147,6 +147,7 @@
             this.Name = "Autentication";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autentication";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

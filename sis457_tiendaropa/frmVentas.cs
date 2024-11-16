@@ -152,6 +152,9 @@ namespace sis457_tiendaropa
             }
         }
 
-        
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

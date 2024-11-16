@@ -44,6 +44,7 @@
             // 
             // dgvCompras
             // 
+            this.dgvCompras.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dgvCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCompras.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
@@ -55,75 +56,98 @@
             this.usuarioregistro,
             this.fecharegistro,
             this.estado});
-            this.dgvCompras.Location = new System.Drawing.Point(41, 94);
+            this.dgvCompras.Location = new System.Drawing.Point(55, 116);
+            this.dgvCompras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvCompras.Name = "dgvCompras";
-            this.dgvCompras.Size = new System.Drawing.Size(575, 314);
+            this.dgvCompras.RowHeadersWidth = 51;
+            this.dgvCompras.Size = new System.Drawing.Size(767, 386);
             this.dgvCompras.TabIndex = 0;
             this.dgvCompras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // id
             // 
             this.id.HeaderText = "id";
+            this.id.MinimumWidth = 6;
             this.id.Name = "id";
             this.id.Visible = false;
+            this.id.Width = 125;
             // 
             // idUsuario
             // 
             this.idUsuario.HeaderText = "idUsuario";
+            this.idUsuario.MinimumWidth = 6;
             this.idUsuario.Name = "idUsuario";
+            this.idUsuario.Width = 125;
             // 
             // idProveedor
             // 
             this.idProveedor.HeaderText = "idProveedor";
+            this.idProveedor.MinimumWidth = 6;
             this.idProveedor.Name = "idProveedor";
+            this.idProveedor.Width = 125;
             // 
             // documento
             // 
             this.documento.HeaderText = "tipodocumento";
+            this.documento.MinimumWidth = 6;
             this.documento.Name = "documento";
+            this.documento.Width = 125;
             // 
             // nombdocumento
             // 
             this.nombdocumento.HeaderText = "documento";
+            this.nombdocumento.MinimumWidth = 6;
             this.nombdocumento.Name = "nombdocumento";
+            this.nombdocumento.Width = 125;
             // 
             // montoTotal
             // 
             this.montoTotal.HeaderText = "montoTotal";
+            this.montoTotal.MinimumWidth = 6;
             this.montoTotal.Name = "montoTotal";
+            this.montoTotal.Width = 125;
             // 
             // usuarioregistro
             // 
             this.usuarioregistro.HeaderText = "usuario";
+            this.usuarioregistro.MinimumWidth = 6;
             this.usuarioregistro.Name = "usuarioregistro";
+            this.usuarioregistro.Width = 125;
             // 
             // fecharegistro
             // 
             this.fecharegistro.HeaderText = "fecha";
+            this.fecharegistro.MinimumWidth = 6;
             this.fecharegistro.Name = "fecharegistro";
+            this.fecharegistro.Width = 125;
             // 
             // estado
             // 
             this.estado.HeaderText = "estado";
+            this.estado.MinimumWidth = 6;
             this.estado.Name = "estado";
+            this.estado.Width = 125;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(195, 32);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(98, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 31);
+            this.label1.Size = new System.Drawing.Size(559, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "detalles de compras";
+            this.label1.Text = "DETALLES DE COMPRAS";
             // 
             // frmDetalleCompra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.DeepPink;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvCompras);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmDetalleCompra";
             this.Text = "frmDetalleCompra";
             this.Load += new System.EventHandler(this.frmDetalleCompra_Load);

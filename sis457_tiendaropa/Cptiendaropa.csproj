@@ -218,6 +218,9 @@
     <None Include="Resources\Diseño sin título %282%29.png" />
     <None Include="Resources\Diseño sin título %283%29.png" />
     <None Include="Resources\Diseño sin título %284%29.png" />
+    <None Include="Resources\añadir al carrito.jpg" />
+    <None Include="Resources\icons8-agregar-a-carrito-de-compras-100.png" />
+    <None Include="Resources\ffo.jpg" />
     <Content Include="Resources\save.png" />
     <None Include="Resources\save1.png" />
     <None Include="Resources\inicio.PNG" />

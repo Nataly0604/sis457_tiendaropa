@@ -1,13 +1,10 @@
-
-﻿using sis457_tiendaropa.utilidades;
+using sis457_tiendaropa.utilidades;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using CadTiendaropa;
 using ClnTiendaropa;
 using System.Windows.Forms;
-
-
 
 namespace sis457_tiendaropa
 {
@@ -17,7 +14,6 @@ namespace sis457_tiendaropa
         {
             InitializeComponent();
         }
-
 
         private void frmCategoria_Load(object sender, EventArgs e)
         {
@@ -49,14 +45,10 @@ namespace sis457_tiendaropa
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-         
-
             Categoria categoria = new Categoria
             {
                 descripcion = txtdescripcion.Text,
                 estado = (short)Convert.ToInt32(((opcionCombo)combestado.SelectedItem).Value),
-
-               
                 usuarioRegistro = Inicio.usuarioActual.usuario1,
                 fechaRegistro = DateTime.Now
             };
@@ -64,15 +56,13 @@ namespace sis457_tiendaropa
             new CategoriaCln().crear(categoria);
             MessageBox.Show("Categoría creada correctamente", "Guardar Categoría", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-        
+            // Recargar la lista de categorías y limpiar los campos
             CargarCategorias();
             Limpiar();
         }
 
         private void btneditar_Click(object sender, EventArgs e)
         {
-     
-
             Categoria categoria = new Categoria
             {
                 id = Convert.ToInt32(txtid.Text),
@@ -83,11 +73,10 @@ namespace sis457_tiendaropa
             new CategoriaCln().actualizar(categoria);
             MessageBox.Show("Categoría actualizada correctamente", "Editar Categoría", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-        
+            // Recargar la lista de categorías y limpiar los campos
             CargarCategorias();
             Limpiar();
         }
-
 
         private void Limpiar()
         {
@@ -116,15 +105,12 @@ namespace sis457_tiendaropa
 
         private void btneliminar_Click_1(object sender, EventArgs e)
         {
-
             new CategoriaCln().eliminar(Convert.ToInt32(txtid.Text));
-            MessageBox.Show("Categoría actualizada correctamente", "Editar Categoría", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Categoría eliminada correctamente", "Eliminar Categoría", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-
+            // Recargar la lista de categorías y limpiar los campos
             CargarCategorias();
             Limpiar();
-
         }
-
     }
 }
