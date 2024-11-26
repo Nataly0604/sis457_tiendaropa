@@ -218,10 +218,10 @@
             // 
             // guardarcompra
             // 
-            this.guardarcompra.Location = new System.Drawing.Point(787, 370);
+            this.guardarcompra.Location = new System.Drawing.Point(838, 357);
             this.guardarcompra.Margin = new System.Windows.Forms.Padding(4);
             this.guardarcompra.Name = "guardarcompra";
-            this.guardarcompra.Size = new System.Drawing.Size(164, 28);
+            this.guardarcompra.Size = new System.Drawing.Size(213, 68);
             this.guardarcompra.TabIndex = 25;
             this.guardarcompra.Text = "guardar compra";
             this.guardarcompra.UseVisualStyleBackColor = true;
@@ -401,7 +401,7 @@
             this.agregarproducto.Location = new System.Drawing.Point(838, 167);
             this.agregarproducto.Margin = new System.Windows.Forms.Padding(4);
             this.agregarproducto.Name = "agregarproducto";
-            this.agregarproducto.Size = new System.Drawing.Size(135, 148);
+            this.agregarproducto.Size = new System.Drawing.Size(216, 148);
             this.agregarproducto.TabIndex = 24;
             this.agregarproducto.Text = "agregar producto";
             this.agregarproducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
