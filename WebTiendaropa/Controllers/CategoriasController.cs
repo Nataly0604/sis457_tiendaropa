@@ -32,14 +32,14 @@ namespace WebTiendaropa.Controllers
                 return NotFound();
             }
 
-            var categorium = await _context.Categoria
+            var categoria = await _context.Categoria
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (categorium == null)
+            if (categoria == null)
             {
                 return NotFound();
             }
 
-            return View(categorium);
+            return View(categoria);
         }
 
         // GET: Categorias/Create
@@ -53,15 +53,15 @@ namespace WebTiendaropa.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Descripcion,UsuarioRegistro,FechaRegistro,Estado")] Categorium categorium)
+        public async Task<IActionResult> Create([Bind("Id,Descripcion,UsuarioRegistro,FechaRegistro,Estado")] Categoria categoria)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(categorium);
+                _context.Add(categoria);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(categorium);
+            return View(categoria);
         }
 
         // GET: Categorias/Edit/5
@@ -72,12 +72,12 @@ namespace WebTiendaropa.Controllers
                 return NotFound();
             }
 
-            var categorium = await _context.Categoria.FindAsync(id);
-            if (categorium == null)
+            var categoria = await _context.Categoria.FindAsync(id);
+            if (categoria == null)
             {
                 return NotFound();
             }
-            return View(categorium);
+            return View(categoria);
         }
 
         // POST: Categorias/Edit/5
@@ -85,9 +85,9 @@ namespace WebTiendaropa.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Descripcion,UsuarioRegistro,FechaRegistro,Estado")] Categorium categorium)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Descripcion,UsuarioRegistro,FechaRegistro,Estado")] Categoria categoria)
         {
-            if (id != categorium.Id)
+            if (id != categoria.Id)
             {
                 return NotFound();
             }
@@ -96,12 +96,12 @@ namespace WebTiendaropa.Controllers
             {
                 try
                 {
-                    _context.Update(categorium);
+                    _context.Update(categoria);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CategoriumExists(categorium.Id))
+                    if (!CategoriaExists(categoria.Id))
                     {
                         return NotFound();
                     }
@@ -112,7 +112,7 @@ namespace WebTiendaropa.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(categorium);
+            return View(categoria);
         }
 
         // GET: Categorias/Delete/5
@@ -123,14 +123,14 @@ namespace WebTiendaropa.Controllers
                 return NotFound();
             }
 
-            var categorium = await _context.Categoria
+            var categoria = await _context.Categoria
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (categorium == null)
+            if (categoria == null)
             {
                 return NotFound();
             }
 
-            return View(categorium);
+            return View(categoria);
         }
 
         // POST: Categorias/Delete/5
@@ -138,17 +138,17 @@ namespace WebTiendaropa.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var categorium = await _context.Categoria.FindAsync(id);
-            if (categorium != null)
+            var categoria = await _context.Categoria.FindAsync(id);
+            if (categoria != null)
             {
-                _context.Categoria.Remove(categorium);
+                _context.Categoria.Remove(categoria);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CategoriumExists(int id)
+        private bool CategoriaExists(int id)
         {
             return _context.Categoria.Any(e => e.Id == id);
         }

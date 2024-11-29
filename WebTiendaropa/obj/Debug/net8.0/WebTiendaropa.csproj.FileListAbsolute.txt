@@ -283,3 +283,7 @@ C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\WebTiendaropa\bin\Debug\net8.0\runt
 C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\WebTiendaropa\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\WebTiendaropa\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\WebTiendaropa\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\WebTiendaropa\bin\Debug\net8.0\WebTiendaropa.staticwebassets.endpoints.json
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\WebTiendaropa\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\WebTiendaropa\obj\Debug\net8.0\staticwebassets\msbuild.WebTiendaropa.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\HP\Desktop\SIS457\sis457_tiendaropa\WebTiendaropa\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

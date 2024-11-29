@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WebTiendaropa.Models;
 
-public partial class Categorium
+public partial class Categoria
 {
     public int Id { get; set; }
 

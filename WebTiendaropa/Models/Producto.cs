@@ -33,5 +33,5 @@ public partial class Producto
 
     public virtual ICollection<HistorialVentum> HistorialVenta { get; set; } = new List<HistorialVentum>();
 
-    public virtual Categorium IdCategoriaNavigation { get; set; } = null!;
+    public virtual Categoria IdCategoriaNavigation { get; set; } = null!;
 }
