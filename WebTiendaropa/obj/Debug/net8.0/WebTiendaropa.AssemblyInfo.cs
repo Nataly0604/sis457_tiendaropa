@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebTiendaropa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a25ba51b67d705dea327b612698ec7cb721978fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+712f4c8e13184ade6a31a5d5116fea4c8c5832fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebTiendaropa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebTiendaropa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

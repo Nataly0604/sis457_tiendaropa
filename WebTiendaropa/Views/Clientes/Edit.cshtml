@@ -1,49 +1,54 @@
 ﻿@model WebTiendaropa.Models.Cliente
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Cliente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit</h1>
-
-<h4>Cliente</h4>
-<hr />
+<h1>Editar Cliente</h1>
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" asp-route-id="@Model.Id">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
+
+            <!-- Campo oculto para el ID -->
+            <input asp-for="Id" type="hidden" />
+
             <div class="form-group">
-                <label asp-for="Documento" class="control-label"></label>
-                <input asp-for="Documento" class="form-control" />
+                <label class="control-label">Documento</label>
+                <input asp-for="Documento" class="form-control" type="text" maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
                 <span asp-validation-for="Documento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NombreCompleto" class="control-label"></label>
+                <label class="control-label">Nombre Completo</label>
                 <input asp-for="NombreCompleto" class="form-control" />
                 <span asp-validation-for="NombreCompleto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
+                <label class="control-label">Email</label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Telefono" class="control-label"></label>
-                <input asp-for="Telefono" class="form-control" />
+                <label class="control-label">Teléfono</label>
+                <input asp-for="Telefono" class="form-control" type="text" maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
                 <span asp-validation-for="Telefono" class="text-danger"></span>
-            </div>
-            <input type="hidden" asp-for="UsuarioRegistro" />
-            <input type="hidden" asp-for="FechaRegistro" />
-            <input type="hidden" asp-for="Estado" /><br>
+            </div><br>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
+                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar cambios</button>
+            </div><br>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index"><i class="fa fa-arrow-left"></i> Volver a la lista</a>
 </div>
 
+<script>
+    document.querySelectorAll('input[maxlength][type="text"]').forEach(input => {
+        input.addEventListener('input', function () {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+    });
+</script>

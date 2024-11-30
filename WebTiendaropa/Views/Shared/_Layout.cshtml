@@ -1,183 +1,153 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TIENDA DE ROPA</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <style>
-        /* Body y estructura general */
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - TIENDA DE ROPA</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
 
-        body {
-            background-color: #fce4ec; /* Fondo rosa claro */
-            display: flex;
-            flex-direction: column;
-        }
+		body {
+			background-color: #fce4ec; /* Fondo rosa claro */
+			display: flex;
+			flex-direction: column;
+		}
 
-        /* Cabecera del navbar */
-        .navbar {
-            background-color: #f50057; /* Rosa fuerte */
-        }
+		.navbar {
+			background-color: #f50057; /* Rosa fuerte */
+		}
 
-        .navbar-brand {
-            font-size: 1.8rem;
-            color: #ffffff;
-            font-weight: bold;
-        }
+		.navbar-brand {
+			font-size: 1.8rem;
+			color: #ffffff;
+			font-weight: bold;
+		}
 
-        .navbar-toggler {
-            border-color: #ffffff;
-        }
+		.navbar-nav .nav-link {
+			color: #ffffff !important;
+		}
 
-        .navbar-toggler-icon {
-            background-color: #ffffff;
-        }
+		.footer {
+			background-color: #f50057;
+			color: #ffffff;
+			text-align: center;
+			padding: 15px;
+			margin-top: auto;
+		}
 
-        .navbar-nav .nav-link {
-            color: #ffffff !important;
-            font-size: 1.1rem;
-            padding: 8px 15px;
-        }
+		.hero-section {
+			text-align: center;
+			background-color: #f8bbd0;
+			padding: 50px 20px;
+			border-radius: 10px;
+			margin-bottom: 30px;
+		}
 
-            .navbar-nav .nav-link:hover {
-                background-color: #ec407a; /* Rosa intermedio */
-                border-radius: 30px;
-            }
+			.hero-section h2 {
+				font-size: 2.5rem;
+				color: #880e4f;
+			}
 
-            .navbar-nav .nav-link.btn-outline-light {
-                border-radius: 30px;
-                font-weight: bold;
-            }
+			.hero-section p {
+				font-size: 1.2rem;
+				color: #6a1b9a;
+				margin: 20px 0;
+			}
 
-        .navbar-nav .dropdown-menu {
-            background-color: #f50057; /* Rosa fuerte */
-        }
+			.hero-section img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				margin-top: 20px;
+			}
 
-        /* Estilos para el footer */
-        .footer {
-            background-color: #f50057; /* Rosa fuerte */
-            color: #ffffff;
-            text-align: center;
-            padding: 15px;
-            margin-top: auto;
-        }
+		.btn-primary {
+			background-color: #ff80ab;
+			border-color: #ff80ab;
+		}
 
-            .footer a {
-                color: #ff80ab; /* Rosa suave */
-                text-decoration: none;
-            }
-
-                .footer a:hover {
-                    color: #f8bbd0; /* Rosa pálido */
-                }
-
-        /* Contenido principal */
-        .container {
-            flex: 1;
-            padding: 20px;
-        }
-
-            .container h1 {
-                font-size: 2.5rem;
-                font-weight: bold;
-                color: #333;
-                margin-bottom: 30px;
-            }
-
-        /* Ajustes de botones */
-        .btn-primary {
-            background-color: #ff80ab; /* Rosa suave */
-            border-color: #ff80ab;
-        }
-
-            .btn-primary:hover {
-                background-color: #f8bbd0; /* Rosa pálido */
-                border-color: #f8bbd0;
-            }
-    </style>
+			.btn-primary:hover {
+				background-color: #f8bbd0;
+				border-color: #f8bbd0;
+			}
+	</style>
 </head>
 <body>
-    @* Verifica si la acción actual es "Login". Si es, no mostrar el header *@
-    @if (ViewContext.RouteData.Values["action"]?.ToString()?.ToLower() != "login")
-    {
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TIENDA DE ROPA</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-controller="Home" asp-action="Privacy">Privacidad</a>
-                            </li>
-                            @if (User.Identity?.IsAuthenticated == true)
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Categoria" asp-action="Index">Categoría</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Productos" asp-action="Index">Productos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Clientes" asp-action="Index">Clientes</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Venta" asp-action="Index">Venta</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="DetalleVenta" asp-action="Index">Detalle Venta</a>
-                                </li>
-                            }
-                            @if (User.Identity?.IsAuthenticated == false)
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link btn btn-outline-light text-dark px-3 py-2 rounded-pill" asp-controller="Account" asp-action="Login">Iniciar Sesión</a>
-                                </li>
-                            }
-                            else
-                            {
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Hola, @User.Identity?.Name
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <li>@await Html.PartialAsync("_LogoutPartial")</li>
-                                    </ul>
-                                </li>
-                            }
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-    }
-    <div class="container my-5">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+	@if (ViewContext.RouteData.Values["action"]?.ToString()?.ToLower() != "login")
+	{
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TIENDA DE ROPA</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+							<li class="nav-item">
+								<a class="nav-link" asp-controller="Clientes" asp-action="Index">Clientes</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" asp-controller="Categoria" asp-action="Index">Categoría</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" asp-controller="Productos" asp-action="Index">Productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" asp-controller="Venta" asp-action="Index">Venta</a>
+							</li>
+							}
+								@if (User.Identity?.IsAuthenticated == false)
+								{
+								<li class="nav-item">
+									<a class="nav-link btn btn-outline-light px-3 py-2 rounded-pill" asp-controller="Account" asp-action="Login">Iniciar Sesión</a>
+								</li>
+								}
+								else
+								{
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Hola, @User.Identity?.Name
+									</a>
+									<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+										<li>@await Html.PartialAsync("_LogoutPartial")</li>
+									</ul>
+								</li>
+								}
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+	}
+	<div class="container my-5">
+		<main role="main" class="pb-3">
+			<div class="hero-section">
+				<h2>¡Bienvenidos a TIENDA DE ROPA!</h2>
+				<img src="https://www.miamf.online/portada_pic8527ni0w1600h1600t7m0.jpg" alt="Imagen destacada de la tienda" class="img-fluid" />
+				<p>Encuentra lo mejor en moda para todas las edades y estilos. Ofrecemos ropa de calidad, moderna y al mejor precio.</p>
+			</div>
+			@RenderBody()
+		</main>
+	</div>
 
-    <footer class="footer">
-        <div class="container">
-            <p>TIENDA DE ROPA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a></p>
-        </div>
-    </footer>
+	<footer class="footer">
+		<div class="container">
+			<p>TIENDA DE ROPA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a></p>
+		</div>
+	</footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
